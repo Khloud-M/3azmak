@@ -186,4 +186,26 @@ hr {
   border-style: none;
   color: white;
   text-align: center;
+}
+
+.accordion {
+  --bs-accordion-border-color:none !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #252525 !important;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
 }/*# sourceMappingURL=main.css.map */
