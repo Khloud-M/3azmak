@@ -30,9 +30,36 @@ body {
     width: calc(100% - 6px);
     margin: auto;
     height: 52px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: white;
-    // box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    .icons{
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+    }
+    .icons div{
+      background: #eeeeee;
+      padding: 7px;
+      border-radius: 50%;
+    
+    }
+    .welcom_content{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 15px;
+      span {
+        font-size: 1.125rem;
+        color: #616161;
+        margin: auto;
+        display: block;
+        font-weight: 600;
+      }
+    }
   }
   .sideBar{
     width: 250px;

@@ -33,8 +33,37 @@ hr {
   width: calc(100% - 6px);
   margin: auto;
   height: 52px;
-  padding: 5px;
+  padding: 5px 10px;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header .icons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.header .icons div {
+  background: #eeeeee;
+  padding: 7px;
+  border-radius: 50%;
+}
+.header .welcom_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.header .welcom_content span {
+  font-size: 1.125rem;
+  color: #616161;
+  margin: auto;
+  display: block;
+  font-weight: 600;
 }
 
 .sideBar {
