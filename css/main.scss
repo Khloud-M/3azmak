@@ -22,12 +22,23 @@ body {
     flex-direction: row;
     background-color: #eff3f8;
   }
+  .container_content{
+    width: calc(100% - 250px);
+  
+  }
+  .header{
+    width: calc(100% - 6px);
+    margin: auto;
+    height: 52px;
+    padding: 5px;
+    background-color: white;
+    // box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014;
+  }
   .sideBar{
     width: 250px;
     height: 100vh !important;
     padding: 15px 0;
     background-color: white;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014!important;
 
     .logo , .list{
@@ -35,7 +46,6 @@ body {
         flex-direction: row;
         column-gap: 15px;
         align-items: center;
-        padding: 5px 15px;
         border-bottom: 1px solid #dfdfdf;
         h2{
             // font-weight: bold;
@@ -44,8 +54,17 @@ body {
         }
         
     }
+    .logo{
+      padding: 0 15px;
+      padding-bottom: 5px;
+      img{
+        width: 2rem;
+        height: 2rem;
+      }
+
+    }
     .list{
-        padding: 14px 15px;
+        padding: 18px 15px;
         column-gap: 12px;
         transition: all 0.3s linear;
         cursor: pointer;
@@ -78,13 +97,13 @@ body {
   }
 //   contant
 .contant{
-    width: calc(100% - 300px);
+    width: calc(100% - 50px);
     margin: 50px  auto;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014!important;
 
-    height: 530px;
+    height: 520px;
     padding: 15px  0;
     h4{
         padding: 0 15px;
@@ -139,7 +158,7 @@ body {
   width: 130px;
   background-color: #64748b;
   padding: 5px;
-  margin:  30px auto;
+  margin:  5px auto;
   border-radius: 0.25rem;
   display: flex;
   flex-direction: row;
