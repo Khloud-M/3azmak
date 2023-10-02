@@ -7,8 +7,12 @@ body {
     src: local("Cairo"), url(../webfonts/Cairo-Bold.ttf) format("truetype");
   }
   @font-face {
-    font-family: "Regular";
+    font-family: "SemiBold";
     src: local("Cairo"), url(../webfonts/Cairo-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Regular";
+    src: local("Cairo"), url(../webfonts/Cairo-Regular.ttf) format("truetype");
   }
   hr{
     border-bottom: 1px solid #dfdfdf;
@@ -48,7 +52,8 @@ body {
        p{
         font-size: 21px;
         margin: auto  0;
-    font-family: "Regular";
+    font-family: "SemiBold";
+
 
        }
     }
@@ -60,7 +65,7 @@ body {
     margin: auto;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    height: 300px;
+    height: auto;
     padding: 15px  0;
     h4{
         padding: 0 15px;
@@ -75,6 +80,27 @@ body {
             background-color: red;
             right: 0;
             bottom: -16px;
+        }
+    }
+    .inner_content{
+        border-bottom: 1px solid #dfdfdf;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 100px;
+        font-family: "Regular";
+
+         p{
+            color: gray;
+            font-size: 18px;
+            // font-family: "s";
+            font-family: "SemiBold";
+
+
+         }
+        &:last-child{
+            border-bottom: none;
         }
     }
 }
