@@ -51,6 +51,7 @@ body {
         cursor: pointer;
         &:last-child{
             border-bottom: none;
+      
         }
        &:hover svg path   {
             stroke: #960082 !important;
@@ -83,7 +84,7 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014!important;
 
-    height: 500px;
+    height: 530px;
     padding: 15px  0;
     h4{
         padding: 0 15px;
@@ -134,7 +135,23 @@ body {
     }
 
 }
-.dataOfHeading{
-    display: flex;
-    flex-direction: column;
+.edit{
+  width: 130px;
+  background-color: #64748b;
+  padding: 5px;
+  margin:  30px auto;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 7px;
+  align-items: center;
+  
+  input{
+    background: transparent;
+    outline: none;
+    border-style: none;
+    color: white;
+    text-align: center;
+  }
 }
