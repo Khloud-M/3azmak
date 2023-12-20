@@ -19,6 +19,42 @@ hr {
   border-bottom: 1px solid #dfdfdf;
 }
 
+:root {
+  --main_color:#F79B36;
+}
+
+body .main_open {
+  background: var(--main_color);
+  width: 100%;
+  height: 100vh;
+}
+body .main_open .test {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+body .main_open .test div button {
+  border: none;
+  width: 150px;
+  padding: 7px 2px;
+  text-align: center;
+  border-radius: 4px;
+}
+body .main_open .test h1 {
+  font-family: Cairo;
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white;
+}
+
 .container_dash {
   display: flex;
   flex-direction: row;
