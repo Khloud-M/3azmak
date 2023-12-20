@@ -20,6 +20,9 @@ body {
 :root{
   --main_color:#F79B36;
 }
+a{
+  text-decoration: none;
+}
 body{
  
   .main_open{
@@ -36,6 +39,10 @@ body{
         padding: 7px 2px;
         text-align: center;
         border-radius: 4px;
+        a{
+          color: black;
+
+        }
       }
     }
       align-items: center;
