@@ -145,4 +145,35 @@ header {
 }
 .mobile_screen, .title {
   display: none;
+}
+
+.container_ifno {
+  width: 100%;
+}
+.container_ifno .name {
+  text-align: center;
+}
+.container_ifno button {
+  background: #F79B36;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 50px auto;
+  width: 120px;
+  display: block;
+}
+.container_ifno ul {
+  padding: 0;
+}
+.container_ifno ul li {
+  list-style: none;
+  margin: 20px 0;
+  border-top: 1px solid #EAEAEA;
+  padding: 15px 0;
+}
+.container_ifno ul li:last-child {
+  border-bottom: 1px solid #EAEAEA;
 }/*# sourceMappingURL=home.css.map */
