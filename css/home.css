@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .container {
-  width: 900px !important;
+  width: 50% !important;
   margin: auto;
   height: 100vh;
   background: #F8F8F8;
@@ -134,6 +134,9 @@ header {
   }
 }
 @media (max-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
   .mobile_screen {
     display: block !important;
   }
