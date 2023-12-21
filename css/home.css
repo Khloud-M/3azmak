@@ -1,5 +1,5 @@
 .container {
-  width: 50%;
+  width: 900px !important;
   margin: auto;
   height: 100vh;
   background: #F8F8F8;
@@ -85,4 +85,64 @@ form div label {
   margin: 0 10px;
   font-family: Cairo;
   font-size: 18px;
+}
+
+header {
+  background-color: white;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info ul {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  align-items: center;
+}
+.info ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.info ul li button {
+  background: #F79B36;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.btn_custom {
+  background: #EAEAEA;
+}
+
+.btn_custom:focus, .btn_custom:hover {
+  background: #EAEAEA;
+  outline: none;
+  border-color: transparent;
+}
+
+@media (min-width: 769px) and (max-width: 1201px) {
+  .mobile_screen {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .mobile_screen {
+    display: block !important;
+  }
+  .title {
+    display: block !important;
+  }
+  .info {
+    display: none !important;
+  }
+}
+.mobile_screen, .title {
+  display: none;
 }/*# sourceMappingURL=home.css.map */
