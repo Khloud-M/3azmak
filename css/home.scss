@@ -157,8 +157,29 @@ header{
 }
 .container_ifno{
     width: 100%;
+    h1{
+        text-align: center;
+        font-weight: 900;
+        font-size:30px ;
+        font-family: 'Noto Nastaliq Urdu', serif;
+        position: relative;
+
+    }
+h1::before {
+        content: "\064B"; /* Unicode code point for a fatha (nunation mark) */
+        position: absolute;
+        top: -0.5em;
+        right: 50%;
+        color: #F79B36; /* Set the color of the nunation mark */
+      }
+    
     .name{
         text-align: center;
+        color: #F79B36;
+        margin: 60px;
+        font-size:30px ;
+        font-weight: 700;
+
     }
     button{
         background: #F79B36;
