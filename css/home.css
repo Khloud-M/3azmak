@@ -198,4 +198,10 @@ header {
 }
 .container_ifno ul li:last-child {
   border-bottom: 1px solid #EAEAEA;
+}
+
+.slidere .testbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }/*# sourceMappingURL=home.css.map */

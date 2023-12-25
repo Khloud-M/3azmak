@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&family=Noto+Nastaliq+Urdu:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css" />
+
+    <!-- or link to the CDN -->
+    <!-- <link rel="stylesheet" href="url-to-cdn/splide.min.css" /> -->
 
     <!-- //bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -286,8 +290,87 @@
           </div>
           <div>...شارع عثمان بن الملك .حي المركبات . الدمام</div>
         </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Home
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          ></div>
+        </div>
+        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-image"></i>
+        <i class="fas fa-th-large"></i>
       </main>
     </div>
+
+    <script src="path-to-the-file/splide.min.js"></script>
+    <!-- <script src="js/file.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide").mount();
+      });
+    </script>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- //main sytle -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <!-- <link rel="icon" type="image/x-icon" href="./image/icoooon.png"> -->
   </head>
   <body>
@@ -24,10 +25,92 @@
         <h1>عازمك</h1>
         <div>
           <p>أهلاً بكم في تطبيق عازمك!</p>
-          <button><a href="home.html"> متابعة</a></button>
+          <div>
+            <button
+              class="btn btn_custom"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+              <span> متابعة </span>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-bottom"
+              tabindex="-1"
+              id="offcanvasBottom"
+              aria-labelledby="offcanvasBottomLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                  اختر الفرع
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body small">
+                <form id="cityForm">
+                  <div>
+                    <input
+                      type="radio"
+                      id="city1"
+                      name="options"
+                      value="option1"
+                    />
+                    <label for="city1">الدمام</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="city2"
+                      name="options"
+                      value="option2"
+                    />
+                    <label for="city2">الرياض</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="city3"
+                      name="options"
+                      value="option2"
+                    />
+                    <label for="city3">مكة المكرمة</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="city4"
+                      name="options"
+                      value="option2"
+                    />
+                    <label for="city4"> اسم المدينة</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="city5"
+                      name="options"
+                      value="option2"
+                    />
+                    <label for="city5"> اسم المدينة</label>
+                  </div>
+                  <!-- <button type="submit"><a href="#home.html"> حفظ</a></button> -->
+                  <input type="submit" value="حفظ" />
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="js/file.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>

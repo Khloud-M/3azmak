@@ -208,3 +208,19 @@ h1::before {
         }
     }
 }
+.slidere{
+    .testbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    // .carousel-item{
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: center;
+    //     img{
+    //         width: 350px;
+    //         height: 50px;
+    //     }
+    // }
+}
