@@ -287,4 +287,21 @@ form div label {
 
 .nav-tabs .nav-link:hover {
   color: black;
+}
+
+.choose_details {
+  background-color: white;
+  border-radius: 15px;
+}
+.choose_details form {
+  width: 100%;
+}
+.choose_details .addition {
+  color: white;
+  background-color: #F79B36;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0px 0 15px 15px;
 }/*# sourceMappingURL=home.css.map */
