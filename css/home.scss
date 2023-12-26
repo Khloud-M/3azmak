@@ -1,5 +1,9 @@
+@import url('../css/header.css');
+i{
+    font-size: 20px;
+}
 .container{
-    width: 40% !important;
+    width: 45% !important;
     // width: 750px !important;
     margin: auto;
     height: 100vh;
@@ -89,40 +93,20 @@ form div {
     }
 
 }
-header{
-    background-color: white;
-    height: 60px;
-    margin-bottom: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // align-items: center;
-    // box-shadow: 2px 50px 2px 2px white;
+// header{
+//     background-color: white;
+//     height: 60px;
+//     margin-bottom: 20px;
+//     padding: 10px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     // align-items: center;
+//     // box-shadow: 2px 50px 2px 2px white;
 
 
-}
-.info{
-    ul {
-        display: flex;
-        flex-direction: row;
-        column-gap: 15px;
-        align-items: center;
-        li{
-            list-style: none;
-            cursor: pointer;
-            button{
-                background: #F79B36;
-                border: none;
-                color: white;
-                text-align: center;
-                padding: 6px ;
-                // font-size: px;
-                border-radius: 4px;
-            }
-        }
-    }
-}
+// }
+
 .btn_custom{
     // background-color: red;
     background: #EAEAEA;
@@ -135,7 +119,10 @@ header{
     border-color: transparent;
 
 }
-@media(min-width:769px) and (max-width:1201px) {
+@media(min-width:769px) and (max-width:1024px) {
+    .container{
+        width: 80% !important;
+    }
     .mobile_screen{
         display: none !important;
     }
