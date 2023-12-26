@@ -34,4 +34,44 @@ header .info ul li button {
   text-align: center;
   padding: 6px;
   border-radius: 4px;
+}
+
+.mobile_screen .container_ifno {
+  width: 100%;
+}
+.mobile_screen .container_ifno .image {
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+.mobile_screen .container_ifno .name {
+  text-align: center;
+  color: #F79B36;
+  margin: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.mobile_screen .container_ifno button {
+  background: #F79B36;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 50px auto;
+  width: 120px;
+  display: block;
+}
+.mobile_screen .container_ifno ul {
+  padding: 0;
+}
+.mobile_screen .container_ifno ul li {
+  list-style: none;
+  margin: 20px 0;
+  border-top: 1px solid #EAEAEA;
+  padding: 10px 0;
+}
+.mobile_screen .container_ifno ul li:last-child {
+  border-bottom: 1px solid #EAEAEA;
 }/*# sourceMappingURL=header.css.map */

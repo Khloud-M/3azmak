@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("../css/header.css");
 i {
   font-size: 20px;
@@ -131,55 +130,6 @@ form div label {
 }
 .mobile_screen, .title {
   display: none;
-}
-
-.container_ifno {
-  width: 100%;
-}
-.container_ifno h1 {
-  text-align: center;
-  font-weight: 900;
-  font-size: 30px;
-  font-family: "Noto Nastaliq Urdu", serif;
-  position: relative;
-}
-.container_ifno h1::before {
-  content: "ً"; /* Unicode code point for a fatha (nunation mark) */
-  position: absolute;
-  top: -0.5em;
-  right: 50%;
-  color: #F79B36; /* Set the color of the nunation mark */
-}
-.container_ifno .name {
-  text-align: center;
-  color: #F79B36;
-  margin: 50px;
-  font-size: 30px;
-  font-weight: 700;
-}
-.container_ifno button {
-  background: #F79B36;
-  border: none;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-  margin: 50px auto;
-  width: 120px;
-  display: block;
-}
-.container_ifno ul {
-  padding: 0;
-}
-.container_ifno ul li {
-  list-style: none;
-  margin: 20px 0;
-  border-top: 1px solid #EAEAEA;
-  padding: 10px 0;
-}
-.container_ifno ul li:last-child {
-  border-bottom: 1px solid #EAEAEA;
 }
 
 .slidere .testbox {
