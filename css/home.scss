@@ -368,3 +368,23 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked {
     background-color: #F79B36;
   }
+.share_icon{
+ p{
+    background-color: white;
+    width: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    // transition: all 0.5 ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--main_color);
+        color: white;
+    }
+
+    
+ }
+    i{
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}

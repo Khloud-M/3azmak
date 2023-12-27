@@ -337,4 +337,21 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked {
   background-color: #F79B36;
+}
+
+.share_icon p {
+  background-color: white;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.share_icon p:hover {
+  background-color: var(--main_color);
+  color: white;
+}
+.share_icon i {
+  font-size: 16px;
+  margin: 0 10px;
 }/*# sourceMappingURL=home.css.map */
