@@ -21,6 +21,11 @@
   </head>
   <body style="direction: rtl">
     <div class="container">
+      <header>
+        <i class="fa-solid fa-angle-right"></i>
+        <h3>تفاصيل الوجبة</h3>
+        <i class="fa-regular fa-bell"></i>
+      </header>
       <div class="slider">
         <div
           id="carouselExampleControls"
@@ -55,14 +60,30 @@
           </button>
         </div>
       </div>
-      <div class="content_list">
-        <h3>اسم الوجبة</h3>
-        <p>وصف الوجبة</p>
+      <div class="content_listt">
+        <h3>وجبة برغر بلحم العجل</h3>
+        <p>
+          وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن الوجبة هنا
+          وصف قصير عبة هنا وصف قصير عبة هنا وصف قصير عبة هنا وصف قصير عن الوجبة
+          هنا
+        </p>
+        <div class="details_more">
+          <div class="logo">
+            <img src="./image//logo.jpg" alt="logo" />
+            <h5>برغر كينغ</h5>
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>3كم</p>
+          </div>
+        </div>
         <div class="choose_details">
-          <div class="name">
-            <span> وجبة البرجر</span>
+          <div class="name d-flex justify-content-between px-4">
+            <h4>وجبة برغر بلحم العجل</h4>
             <span> 40 ر.س</span>
-            <form id="myForm">
+          </div>
+          <form id="myForm">
+            <div class="px-4">
               <div style="direction: rtl">
                 <input type="radio" id="add" name="options" value="option2" />
                 <label for="add"> مع سمسم</label>
@@ -72,43 +93,63 @@
                 <label for="add1"> بدون سمسم</label>
               </div>
               <hr />
-              <div style="direction: rtl">
-                <input
-                  type="checkbox"
-                  id="add33"
-                  name="options"
-                  value="option33"
-                />
-                <label for="add33"> بدون سمسم</label>
-              </div>
-              <div style="direction: rtl">
-                <input
-                  type="checkbox"
-                  id="add3"
-                  name="options"
-                  value="option3"
-                />
-                <label for="add3"> بدون سمسم</label>
-              </div>
-              <div style="direction: rtl">
-                <input
-                  type="checkbox"
-                  id="add4"
-                  name="options"
-                  value="option4"
-                />
-                <label for="add4"> بدون سمسم</label>
-              </div>
-              <div class="addition">
-                <div>pricee</div>
+              <div
+                style="direction: rtl"
+                class="d-flex justify-content-between align-items-center"
+              >
                 <div>
-                  <button id="decreaseBtn">-</button>
-                  <span id="count">1</span>
-                  <button id="increaseBtn">+</button>
+                  <input
+                    type="checkbox"
+                    id="add33"
+                    name="options"
+                    value="option33"
+                  />
+                  <label for="add33"> قرص لحم عجل إضافي</label>
                 </div>
+                <span> 10 +</span>
               </div>
-            </form>
-          </div>
+              <div
+                style="direction: rtl"
+                class="d-flex justify-content-between align-items-center"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    id="add3"
+                    name="options"
+                    value="option3"
+                  />
+                  <label for="add3"> صوص إضافي</label>
+                </div>
+                <span> 10 +</span>
+              </div>
+              <div
+                style="direction: rtl"
+                class="d-flex justify-content-between"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    id="add4"
+                    name="options"
+                    value="option4"
+                  />
+                  <label for="add4"> خبز إضافي</label>
+                </div>
+                <span> 10 +</span>
+              </div>
+            </div>
+            <div
+              class="addition px-4 d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <button id="decreaseBtn">-</button>
+                <span id="count">1</span>
+                <button id="increaseBtn">+</button>
+              </div>
+              <div>price</div>
+            </div>
+          </form>
         </div>
       </div>
       <div>اعزمني <i class="fa-solid fa-share-nodes"></i></div>

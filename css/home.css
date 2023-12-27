@@ -6,7 +6,6 @@ i {
 .container {
   width: 45% !important;
   margin: auto;
-  height: 100vh;
   background: #F8F8F8;
   font-family: Cairo;
 }
@@ -289,9 +288,28 @@ form div label {
   color: black;
 }
 
+.content_listt {
+  padding: 10px;
+  margin: 15px 0;
+}
+.content_listt h3 {
+  font-weight: 500;
+}
+
+.details_more {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details_more h5, .details_more p {
+  display: inline-block;
+}
+
 .choose_details {
   background-color: white;
   border-radius: 15px;
+  padding-top: 15px;
 }
 .choose_details form {
   width: 100%;
@@ -299,9 +317,24 @@ form div label {
 .choose_details .addition {
   color: white;
   background-color: #F79B36;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   border-radius: 0px 0 15px 15px;
+}
+.choose_details .addition button {
+  border: none;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  border: 2px solid hsl(0, 0%, 83%);
+  outline: none;
+}
+
+input[type=checkbox]:checked {
+  background-color: #F79B36;
 }/*# sourceMappingURL=home.css.map */

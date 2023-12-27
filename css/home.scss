@@ -6,9 +6,10 @@ i{
     width: 45% !important;
     // width: 750px !important;
     margin: auto;
-    height: 100vh;
+    // height: 100vh;
     background: #F8F8F8;
     font-family: Cairo;
+    
 
 }
 :root{
@@ -70,7 +71,7 @@ form{
         border: 2px solid hsl(0, 0%, 83%);
         outline: none;
       }
-    
+  
       /* Style the checked radio button */
       input[type="radio"]:checked {
         border: 2px solid hsl(0, 0%, 83%);
@@ -318,19 +319,52 @@ form div {
 .nav-tabs .nav-link:hover {
     color:black;
 }
+.content_listt{
+padding: 10px;
+margin: 15px 0;
+h3{
+    font-weight: 500;
+    // font-size: 18px;
+    // line-height: 22.5px;
+}
+}
+.details_more{
+    margin: 10px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+        h5 , p {
+            display: inline-block;
+        }
+    
+}
 .choose_details{
     background-color: white;
     border-radius: 15px;
+    padding-top: 15px;
     form{
         width: 100%;
     }
     .addition{
         color: white;
         background-color: #F79B36;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         width: 100%;
         border-radius: 0px 0 15px 15px;
+        button{
+            border: none;
+        }
     }
 }
+input[type="checkbox"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    border: 2px solid hsl(0, 0%, 83%);
+    outline: none;
+  }
+  input[type="checkbox"]:checked {
+    background-color: #F79B36;
+  }
