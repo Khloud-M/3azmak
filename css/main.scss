@@ -1,26 +1,19 @@
 @import url('./global.css');
-  hr{
-    border-bottom: 1px solid #dfdfdf;
-}
   .main_open{
     background: var(--main_color);
     width: 100%;
     height: 100vh;
-    .test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
       p{
-        text-align: center !important;
-      }
-      width: 40%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
-      justify-content: space-around;
+        text-align: center;
+      }    
       .btn_custom{
         display: block;
         margin: auto;
-      
+        width: 200px;
         i {
           font-size: 10px;
           margin: 0 10px;
@@ -28,11 +21,3 @@
       }
 
     }
-    
-  }
-
-.main_open{
-  .btn_custom{
-    width: 200px;
-  }
-}

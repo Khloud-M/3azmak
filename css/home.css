@@ -51,9 +51,11 @@ i {
 }
 
 form {
-  width: 70%;
   margin: auto;
   /* Style the checked radio button */
+}
+form hr {
+  color: var(--second_color);
 }
 form input[type=submit] {
   background: #F79B36;

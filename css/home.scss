@@ -46,9 +46,13 @@ i{
     direction: rtl;
 }
 form{
-    width: 70%;
+    hr{
+        color: var(--second_color);
+    }
+    // width: 70%;
     margin: auto;
     // height: 100%;
+    // background-color: red;
     input[type="submit"]{
         // background: transparent;
         background: #F79B36;
