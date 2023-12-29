@@ -1,36 +1,15 @@
-body {
-    font-family: "Cairo";
-    direction: rtl;
-  }
-  @font-face {
-    font-family: "Cairo";
-    src: local("Cairo"), url(../webfonts/Cairo-Bold.ttf) format("truetype");
-  }
-  @font-face {
-    font-family: "SemiBold";
-    src: local("Cairo"), url(../webfonts/Cairo-SemiBold.ttf) format("truetype");
-  }
-  @font-face {
-    font-family: "Regular";
-    src: local("Cairo"), url(../webfonts/Cairo-Regular.ttf) format("truetype");
-  }
+@import url('./global.css');
   hr{
     border-bottom: 1px solid #dfdfdf;
 }
-:root{
-  --main_color:#F79B36;
-}
-a{
-  text-decoration: none;
-}
-body{
-  direction: rtl;
- 
   .main_open{
     background: var(--main_color);
     width: 100%;
     height: 100vh;
     .test{
+      p{
+        text-align: center !important;
+      }
       width: 40%;
       margin: auto;
       display: flex;
@@ -44,12 +23,16 @@ body{
       
         i {
           font-size: 10px;
+          margin: 0 10px;
         }
       }
 
     }
     
   }
+
+.main_open{
+  .btn_custom{
+    width: 200px;
+  }
 }
-
-

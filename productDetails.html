@@ -18,11 +18,20 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- style sheet -->
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css" />
+
+    <!-- Link to the file hosted on your server, -->
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css" />
+
+    <!-- or link to the CDN -->
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css" />
   </head>
   <body style="direction: rtl">
     <div class="container">
       <header>
-        <i class="fa-solid fa-angle-right"></i>
+        <a href="home.html" style="color: black">
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
         <h3>تفاصيل الوجبة</h3>
         <i class="fa-regular fa-bell"></i>
       </header>
@@ -58,6 +67,15 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+      </div>
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
         </div>
       </div>
       <div class="content_listt">
@@ -164,7 +182,10 @@
             </div>
             <div class="content_list">
               <h3>اسم الوجبة</h3>
-              <p>وصف الوجبة</p>
+              <p style="color: #989898">
+                وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن الوجبة
+                هنا وصف قصير عن الوجبة هنا
+              </p>
               <div class="more_details">
                 <div class="action">
                   <i class="fa-solid fa-cart-plus"></i>
@@ -185,7 +206,10 @@
             </div>
             <div class="content_list">
               <h3>اسم الوجبة</h3>
-              <p>وصف الوجبة</p>
+              <p style="color: #989898">
+                وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن الوجبة
+                هنا وصف قصير عن الوجبة هنا
+              </p>
               <div class="more_details">
                 <div class="action">
                   <i class="fa-solid fa-cart-plus"></i>
@@ -208,7 +232,10 @@
             </div>
             <div class="content_list">
               <h3>اسم الوجبة</h3>
-              <p>وصف الوجبة</p>
+              <p style="color: #989898">
+                وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن الوجبة
+                هنا وصف قصير عن الوجبة هنا
+              </p>
               <div class="more_details">
                 <div class="action">
                   <i class="fa-solid fa-cart-plus"></i>
@@ -229,7 +256,10 @@
             </div>
             <div class="content_list">
               <h3>اسم الوجبة</h3>
-              <p>وصف الوجبة</p>
+              <p style="color: #989898">
+                وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن الوجبة
+                هنا وصف قصير عن الوجبة هنا
+              </p>
               <div class="more_details">
                 <div class="action">
                   <i class="fa-solid fa-cart-plus"></i>
@@ -278,5 +308,6 @@
         // You can perform additional actions here if needed
       });
     </script>
+    <script src="splide/dist/js/splide.min.js"></script>
   </body>
 </html>

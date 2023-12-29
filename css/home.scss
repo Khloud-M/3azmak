@@ -1,4 +1,6 @@
 @import url('../css/header.css');
+@import url('./global.css');
+
 i{
     font-size: 20px;
 }
@@ -75,6 +77,8 @@ form{
       /* Style the checked radio button */
       input[type="radio"]:checked {
         border: 2px solid hsl(0, 0%, 83%);
+        // border: 2px solid #F79B36;
+        
         // border-color: white;
         background-color: #F79B36;
        
@@ -207,6 +211,7 @@ form div {
                 color: white;
             }
         }
+        
         .price{
             span{
                 color: var(--main_color);
@@ -386,5 +391,10 @@ input[type="checkbox"] {
     i{
         font-size: 16px;
         margin: 0 10px;
+    }
+}
+.content_list{
+    p{
+        color: #909090;
     }
 }
