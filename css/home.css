@@ -6,6 +6,7 @@ i {
 
 .container {
   width: 45% !important;
+  direction: rtl !important;
   margin: auto;
   background: #F8F8F8;
   font-family: Cairo;
@@ -361,4 +362,38 @@ input[type=checkbox]:checked {
 
 .content_list p {
   color: #909090;
+}
+
+.main_dish .splide__slide {
+  margin: 0 5px;
+}
+.main_dish .splide__slide img {
+  width: 100%;
+}
+
+.main_dish .splide__slide.is-active.is-visible img {
+  border: 3px solid var(--main_color);
+}
+
+.story .splide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 100px !important;
+}
+.story .splide__slide h6 {
+  font-size: 14px;
+}
+.story .splide__slide img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.story .splide__slide.is-active.is-visible img {
+  border: 3px solid var(--main_color);
 }/*# sourceMappingURL=home.css.map */

@@ -11,32 +11,19 @@
       rel="stylesheet"
     />
     <!-- //bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- fontawsome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- style sheet -->
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <script src="splide/dist/js/splide.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="icons">
-          <i class="fa-regular fa-bell"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="info">
-          <ul>
-            <li>فهد الغامري</li>
-            <li>تغيير اللغة</li>
-            <li>الإعدادت</li>
-            <li>الشروط والأحكام</li>
-            <li>تواصل معنا</li>
-            <li>حول التطبيق</li>
-            <li><button>انضم إالينا</button></li>
-          </ul>
-        </div>
         <!-- show mobile -->
         <div class="mobile_screen">
           <button
@@ -80,6 +67,21 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="info">
+          <ul>
+            <li><button>انضم إالينا</button></li>
+            <li>فهد الغامري</li>
+            <li>تغيير اللغة</li>
+            <li>الإعدادت</li>
+            <li>الشروط والأحكام</li>
+            <li>تواصل معنا</li>
+            <li>حول التطبيق</li>
+          </ul>
+        </div>
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </header>
       <main>
@@ -207,6 +209,50 @@
           </div>
           <div>فرع الدمام</div>
         </div>
+
+        <section class="splide my-5 story" aria-label="Basic Structure Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="my-2">عروض الفطور</h6>
+              </li>
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="my-2">حلويات</h6>
+              </li>
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="my-2">عروض الغداء</h6>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          class="splide my-5 main_dish"
+          aria-label="Basic Structure Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="text-center my-2">الأطباق الرئيسية</h6>
+              </li>
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="text-center my-2">حلويات</h6>
+              </li>
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="text-center my-2">المخبوزات</h6>
+              </li>
+              <li class="splide__slide">
+                <img src="./image/cover1.jpg" />
+                <h6 class="text-center my-2">المشروبات</h6>
+              </li>
+            </ul>
+          </div>
+        </section>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
@@ -502,5 +548,39 @@
     </div>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      // new Splide(".splide", {
+      //   // type: "loop",
+      //   perPage: 4,
+      //   rewind: true,
+      //   breakpoints: {
+      //     640: {
+      //       perPage: 2,
+      //     },
+      //   },
+      // }).mount();
+      var elms = document.getElementsByClassName("splide");
+
+      for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[0], {
+          perPage: 4,
+          rewind: true,
+          breakpoints: {
+            640: {
+              perPage: 2,
+            },
+          },
+        }).mount();
+        new Splide(elms[1], {
+          perPage: 4,
+          rewind: true,
+          breakpoints: {
+            640: {
+              perPage: 2,
+            },
+          },
+        }).mount();
+      }
+    </script>
   </body>
 </html>
