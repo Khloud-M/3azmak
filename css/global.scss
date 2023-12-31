@@ -1,0 +1,51 @@
+:root{
+    --main_color:#F79B36;
+    --second_color:#989898;
+    --bg-color:#E6EAEE;
+    --transtion:0.3s;
+
+  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Readex Pro", sans-serif;
+
+}
+body {
+    font-family: 'Readex Pro', sans-serif;   
+     direction: rtl;
+}
+.container {
+  width: 45% !important;
+  direction: rtl !important;
+  margin: auto;
+  background: #F8F8F8;
+  font-family: Cairo;
+  padding: 0;
+  min-height: 100vh;
+}
+ 
+a{
+        text-decoration: none;
+        color: black;
+       
+}
+.header{
+  column-gap: 300px;
+  h6{
+    font-weight: 400;
+    color: #303030;
+  }
+}
+@media(max-width:768px) {
+  .container{
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+  .header{
+    column-gap: 100px; 
+
+  }
+}

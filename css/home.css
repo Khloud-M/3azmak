@@ -4,14 +4,6 @@ i {
   font-size: 20px;
 }
 
-.container {
-  width: 45% !important;
-  direction: rtl !important;
-  margin: auto;
-  background: #F8F8F8;
-  font-family: Cairo;
-}
-
 :root {
   --main_color:#F79B36;
 }
@@ -381,19 +373,16 @@ input[type=checkbox]:checked {
   align-items: center;
   justify-content: center;
   margin: 10px;
-  width: 100px !important;
+  width: 90px !important;
 }
 .story .splide__slide h6 {
-  font-size: 14px;
+  font-size: 13px;
 }
 .story .splide__slide img {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-}
-
-.story .splide__slide.is-active.is-visible img {
   border: 3px solid var(--main_color);
 }/*# sourceMappingURL=home.css.map */
