@@ -35,6 +35,7 @@ a {
 .header {
   -moz-column-gap: 300px;
        column-gap: 300px;
+  height: 55px;
 }
 .header h6 {
   font-weight: 400;
@@ -48,7 +49,7 @@ a {
     margin: 0;
   }
   .header {
-    -moz-column-gap: 100px;
-         column-gap: 100px;
+    -moz-column-gap: 150px;
+         column-gap: 150px;
   }
 }/*# sourceMappingURL=global.css.map */
