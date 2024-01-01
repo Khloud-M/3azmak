@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>عازمك</title>
     <!-- //font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
     <!-- //bootstrap -->
@@ -342,15 +344,21 @@
                 <div class="list_Galler">
                   <div class="image">
                     <a href="productDetails.html">
-                      <img src="./image/cover1.jpg" alt="" />
+                      <img id="productImage" src="./image/cover1.jpg" alt="" />
                     </a>
                   </div>
                   <div class="content_list">
                     <h3>اسم الوجبة</h3>
                     <p>وصف الوجبة</p>
                     <div class="more_details">
-                      <div class="action">
+                      <!-- <div class="action">
                         <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                      </div> -->
+                      <div class="action">
+                        <button id="addToCartBtn" class="cart-btn">
+                          <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
                         <i class="fa-solid fa-share-nodes"></i>
                       </div>
                       <div class="price">
@@ -555,6 +563,32 @@
           </div>
         </div>
       </main>
+      <footer
+        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
+      >
+        <div class="mainHome d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
+          <a href="home.html" target="_blank"> الرئيسية</a>
+        </div>
+        <div class="myorder d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank">
+            <i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="home.html" target="_blank"> طلباتي</a>
+        </div>
+        <div class="elwlaa d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank">
+            <i class="fa-solid fa-gift"></i
+          ></a>
+          <a href="home.html" target="_blank"> الولاء</a>
+        </div>
+        <div class="myAccount d-flex flex-column align-items-center">
+          <a href="myAccount.html" target="_blank">
+            <i class="fa-solid fa-user"></i
+          ></a>
+          <a href="myAccount.html" target="_blank"> حسابي</a>
+        </div>
+      </footer>
     </div>
 
     <script src="js/bootstrap.bundle.js"></script>
@@ -591,6 +625,55 @@
           },
         }).mount();
       }
+    </script>
+    <script>
+      // Function to add the product to the cart
+      function addToCart() {
+        // Get the product details
+        const productName =
+          document.querySelector(".content_list h3").textContent;
+        const productPrice = document.querySelector(".price span").textContent;
+        const productImage = document.getElementById("productImage").src;
+
+        // Check if cart exists in localStorage
+        let cartItems = localStorage.getItem("cartItems");
+        if (!cartItems) {
+          // If cart does not exist, create an empty cart
+          cartItems = [];
+        } else {
+          // If cart exists, parse the JSON string to an array
+          cartItems = JSON.parse(cartItems);
+        }
+
+        // Check if the product already exists in the cart
+        const existingProduct = cartItems.find(
+          (item) => item.name === productName
+        );
+        if (existingProduct) {
+          // If the product exists, increment the quantity
+          existingProduct.quantity += 1;
+        } else {
+          // If the product does not exist, add it to the cart
+          const product = {
+            name: productName,
+            price: productPrice,
+            image: productImage,
+            quantity: 1,
+          };
+          cartItems.push(product);
+        }
+
+        // Store the updated cart in localStorage
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+        // Display a success message (you can customize this as needed)
+        alert("Item added to cart!");
+      }
+
+      // Attach the addToCart function to the button's click event
+      document
+        .getElementById("addToCartBtn")
+        .addEventListener("click", addToCart);
     </script>
   </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حول التطبيق</title>
+    <!-- //font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="cartItemsContainer"></div>
+    </div>
+    <script>
+      const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+      const cartItemsContainer = document.getElementById("cartItemsContainer");
+
+      if (cartItems && cartItems.length > 0) {
+        cartItems.forEach((item) => {
+          // Generate HTML markup for each item
+          const itemMarkup = `
+      <div class="cart-item">
+        <div class="image">
+          <img src="${item.image}" alt="Product Image" />
+        </div>
+        <div class="details">
+          <h4>${item.name}</h4>
+          <p>Price: $${item.price}</p>
+          <p>quantity: $${item.quantity}</p>
+        </div>
+      </div>
+    `;
+
+          // Append the item markup to the container
+          cartItemsContainer.innerHTML += itemMarkup;
+        });
+      } else {
+        // Handle case when the cart is empty
+        cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+      }
+    </script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>عازمك</title>
+    <title>انضم إلينا</title>
     <!-- //font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
@@ -17,11 +17,106 @@
     <!-- fontawsome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- style sheet -->
-    <!-- <link rel="stylesheet" href="splide/dist/css/splide.min.css" /> -->
-    <link rel="stylesheet" href="css/home.css" />
-    <!-- <script src="splide/dist/js/splide.min.js"></script> -->
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
-    <div class="container">انضم الينا</div>
+    <div class="container">
+      <div class="header d-flex align-items-center bg-white p-3">
+        <a href="home.html" style="color: black">
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <h6>انضم إلينا</h6>
+      </div>
+      <div
+        class="join_us d-flex flex-column align-items-center px-5 m-5 justify-content-center bg-white"
+      >
+        <img src="./image/3azmak.png" alt="logo" />
+        <p>
+          إنضم إلى قائمة عملائنا المميزين، يرجى تعبئة الحقول وسيتواصل معك فريقنا
+          في أقرب وقت
+        </p>
+        <form>
+          <div class="name">
+            <label for="name">الاسم :</label>
+            <div class="container_input">
+              <i class="fa fa-user"></i>
+              <input type="text" id="name" placeholder=" الاسم من فضلك" />
+            </div>
+          </div>
+          <div class="email">
+            <label for="name">البريد الإلكتروني :</label>
+            <div class="container_input">
+              <i class="fa fa-email"></i>
+              <input
+                type="email"
+                id="email"
+                placeholder="البريد الالكتروني من فضلك"
+              />
+            </div>
+          </div>
+          <div class="name_company">
+            <label for="name_company">اسم الشركة :</label>
+            <div class="container_input">
+              <i class="fa fa-email"></i>
+              <input
+                type="text"
+                id="name_company"
+                placeholder=" اسم شركتك من فضلك"
+              />
+            </div>
+          </div>
+          <div class="type_company">
+            <label for="type_company">نوع الشركة :</label>
+            <div class="container_input">
+              <i class="fa fa-email"></i>
+              <input
+                type="text"
+                id="type_company"
+                placeholder=" نوع شركتك من فضلك"
+              />
+            </div>
+          </div>
+          <div class="phone_number">
+            <label for="type_company"> رقم التواصل :</label>
+            <div class="container_input">
+              <i class="fa fa-phone"></i>
+              <input
+                style="direction: rtl"
+                type="tel"
+                id="phone_number"
+                placeholder="اكتب رقم التواصل من فضلك"
+              />
+            </div>
+          </div>
+          <input type="submit" value="إرسال" />
+        </form>
+      </div>
+      <footer
+        class="bg-white mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
+      >
+        <div class="mainHome d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
+          <a href="home.html" target="_blank"> الرئيسية</a>
+        </div>
+        <div class="myorder d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank">
+            <i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="home.html" target="_blank"> طلباتي</a>
+        </div>
+        <div class="elwlaa d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank">
+            <i class="fa-solid fa-gift"></i
+          ></a>
+          <a href="home.html" target="_blank"> الولاء</a>
+        </div>
+        <div class="myAccount d-flex flex-column align-items-center">
+          <a href="myAccount.html" target="_blank">
+            <i class="fa-solid fa-user"></i
+          ></a>
+          <a href="myAccount.html" target="_blank"> حسابي</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

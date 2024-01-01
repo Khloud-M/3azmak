@@ -50,18 +50,6 @@ form {
 form hr {
   color: var(--second_color);
 }
-form input[type=submit] {
-  background: #F79B36;
-  border: none;
-  color: white;
-  margin: 30px auto;
-  text-align: center;
-  width: 110px;
-  display: block;
-  padding: 8px;
-  font-size: 20px;
-  border-radius: 8px;
-}
 form input[type=radio] {
   appearance: none;
   -moz-appearance: none;
