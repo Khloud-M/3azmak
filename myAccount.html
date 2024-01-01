@@ -19,11 +19,82 @@
     <!-- fontawsome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- style sheet -->
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
     <div class="container">
-      حسابي
+      <header>
+        <!-- show mobile -->
+        <div class="mobile_screen">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="container_ifno">
+                <div class="image">
+                  <img src="./image/3azmak.png" alt="3azmak_title" />
+                </div>
+                <h2 class="name">فهد الغامري</h2>
+                <ul>
+                  <li>تغيير اللغة</li>
+                  <li>الإعدادت</li>
+                  <li>الشروط والأحكام</li>
+                  <li>
+                    <a href="contactUS.html" target="_blank"> تواصل معنا</a>
+                  </li>
+                  <li>
+                    <a href="aboutApp.html" target="_blank"> حول التطبيق</a>
+                  </li>
+                </ul>
+                <button>
+                  <a href="joinUs.html" target="_blank"> انضم إلينا</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <ul>
+            <li>
+              <button>
+                <a href="joinUs.html" target="_blank"> انضم إلينا</a>
+              </button>
+            </li>
+            <li>فهد الغامري</li>
+            <li>تغيير اللغة</li>
+            <li>الإعدادت</li>
+            <li>الشروط والأحكام</li>
+            <li><a href="contactUS.html" target="_blank"> تواصل معنا</a></li>
+            <li><a href="aboutApp.html" target="_blank"> حول التطبيق</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </header>
       <footer
         class="mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
       >
