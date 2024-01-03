@@ -82,27 +82,60 @@ form div label {
   display: none;
 }
 
-.wrap_product {
-  border-radius: 15px;
-  background-color: red;
-}
-.wrap_product .image {
+.list_Galler .image,
+.list_Gallery .image {
   width: 100%;
 }
-.wrap_product .image img {
+.list_Galler .image img,
+.list_Gallery .image img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 5px 11px 1px rgba(0, 0, 0, 0.27);
-  margin: 20px 0;
+.list,
+.list_Galler,
+.list_Gallery {
   border-radius: 15px;
 }
+.list .content_list h3,
+.list_Galler .content_list h3,
+.list_Gallery .content_list h3 {
+  font-size: 18px;
+}
+.list .content_list .more_details .action button,
+.list_Galler .content_list .more_details .action button,
+.list_Gallery .content_list .more_details .action button {
+  border: none;
+}
+.list .content_list .more_details .action i,
+.list_Galler .content_list .more_details .action i,
+.list_Gallery .content_list .more_details .action i {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  background-color: hwb(0 96% 8%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.list .content_list .more_details .action i:hover,
+.list_Galler .content_list .more_details .action i:hover,
+.list_Gallery .content_list .more_details .action i:hover {
+  background-color: var(--main_color);
+  color: white;
+}
+.list .content_list .more_details .price span,
+.list_Galler .content_list .more_details .price span,
+.list_Gallery .content_list .more_details .price span {
+  color: var(--main_color);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .list .image {
   overflow: hidden;
   width: 25%;
@@ -117,115 +150,19 @@ form div label {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.list .content_list {
-  padding: 10px 25px;
-  text-align: end;
-}
 .list .content_list .more_details {
   display: flex;
   align-items: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.list .content_list .more_details .action i {
-  width: 60px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-  background-color: hwb(0 96% 8%);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.list .content_list .more_details .action i:hover {
-  background-color: var(--main_color);
-  color: white;
-}
-.list .content_list .more_details .price span {
-  color: var(--main_color);
-  display: inline-block;
-  font-weight: 700;
-  font-size: 20px;
-}
 
-.list_Gallery {
-  box-shadow: 0 5px 11px 1px rgba(0, 0, 0, 0.27);
-  border-radius: 15px;
-}
-.list_Gallery .image {
-  width: 100%;
-}
-.list_Gallery .image img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.list_Gallery .content_list .more_details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.list_Gallery .content_list .more_details .action i {
-  width: 60px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-  background-color: hwb(0 96% 8%);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.list_Gallery .content_list .more_details .action i:hover {
-  background-color: var(--main_color);
-  color: white;
-}
-.list_Gallery .content_list .more_details .price span {
-  color: var(--main_color);
-  display: inline-block;
-  font-weight: 700;
-  font-size: 20px;
+.list_Gallery, .list {
+  box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.27);
 }
 
 .list_Galler {
   border: 1px solid #CCC;
-  border-radius: 15px;
-}
-.list_Galler .image {
-  width: 100%;
-}
-.list_Galler .image img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.list_Galler .content_list h3 {
-  font-size: 18px;
-}
-.list_Galler .content_list .more_details .action button {
-  border: none;
-}
-.list_Galler .content_list .more_details .action i {
-  width: 60px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-  background-color: hwb(0 96% 8%);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.list_Galler .content_list .more_details .action i:hover {
-  background-color: var(--main_color);
-  color: white;
-}
-.list_Galler .content_list .more_details .price span {
-  color: var(--main_color);
-  display: inline-block;
-  font-weight: 700;
-  font-size: 20px;
 }
 
 .nav-tabs .nav-link {

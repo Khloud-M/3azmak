@@ -79,123 +79,20 @@ form div {
 .mobile_screen{
     display: none;
 }
-.wrap_product{
-border-radius: 15px;
-background-color: red;
-.image{
-    width: 100%;
-    img{
-        width: 100%;
-        object-fit: cover;
-    }
-}
-}
-// list 
-.list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 5px 11px 1px rgb(0 0 0 / 27%);
-    margin: 20px 0;
-    border-radius: 15px;
-  .image{
-    overflow: hidden;
-    width: 25%;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 140px;
-    img{
-        object-fit: cover;
-    }
-  }
-.content_list{
-    padding: 10px 25px;
-    text-align: end;
-    .more_details{
-        display: flex;
-        align-items: center;
-        column-gap: 20px;
-        .action i {
-            width: 60px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            border-radius: 5px;
-            color: black;
-            background-color:             hwb(0 96% 8%)        ;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-            &:hover{
-                background-color: var(--main_color);
-                color: white;
-            }
-        }
-        
-        .price{
-            span{
-                color: var(--main_color);
-                display: inline-block;
-                font-weight: 700;
-                font-size: 20px;
-            }
-        }
-    }
-}
-}
+.list_Galler ,
 .list_Gallery{
-    box-shadow: 0 5px 11px 1px rgb(0 0 0 / 27%);
-    border-radius: 15px;
     .image{
         width: 100%;
         img{
             width: 100%;
             object-fit: cover;
-        }
-    }
-    .content_list{
-        .more_details{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .action i {
-                width: 60px;
-                height: 40px;
-                line-height: 40px;
-                text-align: center;
-                border-radius: 5px;
-                color: black;
-                background-color:             hwb(0 96% 8%)        ;
-                transition: all 0.3s ease-in-out;
-                cursor: pointer;
-                &:hover{
-                    background-color: var(--main_color);
-                    color: white;
-                }
-            }
-            .price{
-                span{
-                    color: var(--main_color);
-                    display: inline-block;
-                    font-weight: 700;
-                    font-size: 20px;
-                }
-            }
         }
     }
 }
-.list_Galler{
-    border: 1px solid #CCC;    
+.list , 
+.list_Galler, 
+.list_Gallery {
     border-radius: 15px;
-    .image{
-        width: 100%;
-        img{
-            width: 100%;
-            object-fit: cover;
-        }
-    }
     .content_list{
         h3{
             font-size: 18px;
@@ -230,6 +127,35 @@ background-color: red;
         }
     }
 }
+// list 
+.list{
+  .image{
+    overflow: hidden;
+    width: 25%;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    img{
+        object-fit: cover;
+    }
+  }
+.content_list{
+    .more_details{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+}
+}
+.list_Gallery , .list{
+    box-shadow: 0 5px 7px 1px rgb(0 0 0 / 27%);
+}
+.list_Galler{
+    border: 1px solid #CCC;    
+}
 .nav-tabs .nav-link {
     color: #909090;
 }
@@ -241,8 +167,6 @@ padding: 10px;
 margin: 15px 0;
 h3{
     font-weight: 500;
-    // font-size: 18px;
-    // line-height: 22.5px;
 }
 }
 .details_more{
@@ -331,13 +255,6 @@ input[type="checkbox"] {
     h6{
         font-size: 13px;
     }
-    // div{
-    //     background-color: #F79B36;
-    //     width: 85px;
-    //     height: 85px;
-    //     object-fit: cover;
-    //     border-radius: 50%;
-
         img{
             width: 85px;
             height: 85px;
