@@ -157,6 +157,11 @@ form div label {
        column-gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .list .image {
+    width: 40%;
+  }
+}
 .list_Gallery, .list {
   box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.27);
 }
