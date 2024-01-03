@@ -1,37 +1,26 @@
-header{
-    background-color: white;
-    height: 60px;
-    margin-bottom: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .icons{
-        i {
-            margin: 0 10px;
-        }
+@import url("./global.css");
+// global style 
+.joinUs_btn{
+    background: var(--main_color);
+    border: none;
+    padding: 6px 10px ;
+    border-radius: 8px;
+    a{
+        color: white;
+        text-align: center;
     }
+}
+header{
+    min-height: 60px;
     .info{
         height: 100%;
         ul {
-            display: flex;
-            flex-direction: row;
             column-gap: 10px;
             justify-content: center;
-            align-items: center;
             li{
                 list-style: none;
                 font-size: 15px;
                 cursor: pointer;
-                button{
-                    background: #F79B36;
-                    border: none;
-                    color: white;
-                    text-align: center;
-                    padding: 6px ;
-                    border-radius: 4px;
-                }
             }
         }
     }
@@ -46,32 +35,18 @@ header{
       }
         .name{
             text-align: center;
-            color: #F79B36;
+            color: var(--main_color);
             margin: 50px;
             font-size:30px ;
             font-weight: 700;
-    
         }
-        button{
-            background: #F79B36;
-            border: none;
-            color: white;
-            text-align: center;
-            padding: 10px ;
-            // font-size: px;
-            border-radius: 8px;  
-            text-align: center;
+        button{ 
             margin:  50px auto;
             width: 120px;
-            display: block;
-        }
-        ul{
-            padding: 0;
-    
+            display: block; 
         }
         ul li {
             list-style: none;
-            margin: 20px 0;
             border-top: 1px solid #EAEAEA;
             padding: 10px 0; 
             &:last-child{

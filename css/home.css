@@ -1,22 +1,7 @@
 @import url("../css/header.css");
 @import url("./global.css");
-i {
-  font-size: 20px;
-}
-
-:root {
-  --main_color:#F79B36;
-}
-
 .slider {
   width: 100%;
-}
-
-.location_branch {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 15px 0;
 }
 
 .offcanvas-backdrop {
@@ -31,7 +16,7 @@ i {
 
 .offcanvas.offcanvas-bottom {
   height: 55%;
-  box-shadow: 2px 5px 2px 2px #dbd7d7;
+  box-shadow: 1px 1px 1px 1px #dbd7d7;
   border-radius: 10px;
 }
 
@@ -45,7 +30,6 @@ i {
 
 form {
   margin: auto;
-  /* Style the checked radio button */
 }
 form hr {
   color: var(--second_color);
@@ -65,11 +49,6 @@ form input[type=radio]:checked {
   background-color: #F79B36;
 }
 
-.btn-close:focus {
-  box-shadow: 0 0 0 0.25rem #F79B36;
-  opacity: 0.5;
-}
-
 form div {
   margin: 15px 0;
 }
@@ -79,28 +58,16 @@ form div label {
   font-size: 18px;
 }
 
-.btn_custom {
-  background: #EAEAEA;
-}
-
-.btn_custom:focus, .btn_custom:hover {
-  background: #EAEAEA;
-  outline: none;
-  border-color: transparent;
+.male, .female {
+  margin: 0px 0;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    width: 80% !important;
-  }
   .mobile_screen {
     display: none !important;
   }
 }
 @media (max-width: 768px) {
-  .container {
-    width: 100% !important;
-  }
   .mobile_screen {
     display: block !important;
   }
@@ -111,14 +78,21 @@ form div label {
     display: none !important;
   }
 }
-.mobile_screen, .title {
+.mobile_screen {
   display: none;
 }
 
-.slidere .testbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.wrap_product {
+  border-radius: 15px;
+  background-color: red;
+}
+.wrap_product .image {
+  width: 100%;
+}
+.wrap_product .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .list {
@@ -177,7 +151,6 @@ form div label {
 
 .list_Gallery {
   box-shadow: 0 5px 11px 1px rgba(0, 0, 0, 0.27);
-  margin: 20px 0;
   border-radius: 15px;
 }
 .list_Gallery .image {
@@ -187,10 +160,6 @@ form div label {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.list_Gallery .content_list {
-  padding: 10px 25px;
-  text-align: end;
 }
 .list_Gallery .content_list .more_details {
   display: flex;
@@ -220,10 +189,8 @@ form div label {
 }
 
 .list_Galler {
-  margin: 20px 0;
   border: 1px solid #CCC;
   border-radius: 15px;
-  padding: 5px;
 }
 .list_Galler .image {
   width: 100%;
@@ -233,14 +200,11 @@ form div label {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.list_Galler .content_list {
-  padding: 10px 25px;
-  text-align: end;
+.list_Galler .content_list h3 {
+  font-size: 18px;
 }
-.list_Galler .content_list .more_details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.list_Galler .content_list .more_details .action button {
+  border: none;
 }
 .list_Galler .content_list .more_details .action i {
   width: 60px;

@@ -1,39 +1,30 @@
-header {
-  background-color: white;
-  height: 60px;
-  margin-bottom: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@import url("./global.css");
+.joinUs_btn {
+  background: var(--main_color);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
 }
-header .icons i {
-  margin: 0 10px;
+.joinUs_btn a {
+  color: white;
+  text-align: center;
+}
+
+header {
+  min-height: 60px;
 }
 header .info {
   height: 100%;
 }
 header .info ul {
-  display: flex;
-  flex-direction: row;
   -moz-column-gap: 10px;
        column-gap: 10px;
   justify-content: center;
-  align-items: center;
 }
 header .info ul li {
   list-style: none;
   font-size: 15px;
   cursor: pointer;
-}
-header .info ul li button {
-  background: #F79B36;
-  border: none;
-  color: white;
-  text-align: center;
-  padding: 6px;
-  border-radius: 4px;
 }
 
 .mobile_screen .container_ifno {
@@ -46,29 +37,18 @@ header .info ul li button {
 }
 .mobile_screen .container_ifno .name {
   text-align: center;
-  color: #F79B36;
+  color: var(--main_color);
   margin: 50px;
   font-size: 30px;
   font-weight: 700;
 }
 .mobile_screen .container_ifno button {
-  background: #F79B36;
-  border: none;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
   margin: 50px auto;
   width: 120px;
   display: block;
 }
-.mobile_screen .container_ifno ul {
-  padding: 0;
-}
 .mobile_screen .container_ifno ul li {
   list-style: none;
-  margin: 20px 0;
   border-top: 1px solid #EAEAEA;
   padding: 10px 0;
 }

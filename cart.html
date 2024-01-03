@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>حول التطبيق</title>
+    <title>طلباتي</title>
     <!-- //font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
     <!-- //bootstrap -->
@@ -20,35 +22,293 @@
   </head>
   <body>
     <div class="container">
-      <div id="cartItemsContainer"></div>
+      <div class="header d-flex align-items-center bg-white p-3">
+        <a href="home.html" style="color: black">
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <h6>طلباتي</h6>
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <!-- <img src="./image//cartempty.jpg" -->
+      <div class="teeeeest m-5">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              السلة
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              <i class="fa-regular fa-clock prv_order"></i>
+              طلباتي السابقة
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div id="cartItemsContainer" class="p-5 m-auto">
+              <div class="product-num"></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+      <div
+        class="total bg-white p-4 d-flex align-items-center justify-content-between"
+      >
+        <div class="total_price">
+          <p>الإجمالي</p>
+          <p><span> 91.0</span> ر.س</p>
+        </div>
+        <div class="payment">
+          <a href="follow_payment.html" target="_blank">
+            متابعة إلى الدفع
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </div>
+      </div>
+      <footer
+        class="bg-white px-4 py-3 d-flex align-items-center justify-content-between"
+      >
+        <div class="mainHome d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
+          <a href="home.html" target="_blank"> الرئيسية</a>
+        </div>
+        <div class="myorder d-flex flex-column align-items-center">
+          <a href="cart.html" target="_blank">
+            <i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="cart.html" target="_blank"> طلباتي</a>
+        </div>
+        <div class="elwlaa d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank">
+            <i class="fa-solid fa-gift"></i
+          ></a>
+          <a href="home.html" target="_blank"> الولاء</a>
+        </div>
+        <div class="myAccount d-flex flex-column align-items-center">
+          <a href="myAccount.html" target="_blank">
+            <i class="fa-solid fa-user"></i
+          ></a>
+          <a href="myAccount.html" target="_blank"> حسابي</a>
+        </div>
+      </footer>
     </div>
     <script>
       const cartItems = JSON.parse(localStorage.getItem("cartItems"));
       const cartItemsContainer = document.getElementById("cartItemsContainer");
+      const numberProduct = JSON.parse(localStorage.getItem("numberProduct"));
 
       if (cartItems && cartItems.length > 0) {
+        // Create the wrapper element
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("wrapper-class"); // Add your desired wrapper class name
+
+        // Create and append numberProductElement
+        const numberProductElement = document.createElement("p");
+        numberProductElement.textContent = `عدد عناصر السلة :(${numberProduct})`;
+        wrapper.appendChild(numberProductElement);
+
+        // Create and append removeBell element
+        const removeBell = document.createElement("div");
+        const removeBellIcon = document.createElement("i");
+        removeBellIcon.className = "fa-solid  fa-trash-can"; // Assuming Font Awesome classes
+        removeBell.appendChild(removeBellIcon);
+        // Add title:
+        const removeBellTitle = document.createElement("span");
+        removeBellTitle.textContent = "افراغ السلة";
+        removeBell.appendChild(removeBellTitle);
+
+        // ... (existing code for adding icon and title to removeBell) ...
+        wrapper.appendChild(removeBell);
+
+        // Append the wrapper to the cartItemsContainer
+        cartItemsContainer.appendChild(wrapper);
         cartItems.forEach((item) => {
           // Generate HTML markup for each item
           const itemMarkup = `
       <div class="cart-item">
         <div class="image">
-          <img src="${item.image}" alt="Product Image" />
+          <img src="${item.productImage}" alt="Product Image" />
         </div>
         <div class="details">
-          <h4>${item.name}</h4>
-          <p>Price: $${item.price}</p>
+          <h4>${item.productName}</h4>
+          <p>Price: $${item.productPrice}</p>
           <p>quantity: $${item.quantity}</p>
         </div>
       </div>
     `;
-
-          // Append the item markup to the container
           cartItemsContainer.innerHTML += itemMarkup;
         });
       } else {
-        // Handle case when the cart is empty
-        cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+        var text = document.createElement("p");
+        var icon = document.createElement("i");
+        var link = document.createElement("a");
+
+        // Set the class attribute of the icon
+        icon.className = "fa-solid fa-cart-shopping";
+        link.href = "home.html";
+        link.textContent = "الصفحة الرئيسية";
+        text.textContent = "لا يوجد عناصر بالسلة";
+
+        // Append the icon to the cartItemsContainer
+        cartItemsContainer.appendChild(icon);
+        cartItemsContainer.appendChild(text);
+        cartItemsContainer.appendChild(link);
       }
     </script>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
+<style>
+  #cartItemsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #cartItemsContainer i {
+    font-size: 48px;
+    color: var(--second_color);
+  }
+  #cartItemsContainer p {
+    color: var(--second_color);
+    font-weight: 400;
+    margin: 15px 0;
+  }
+
+  #cartItemsContainer a {
+    background: #f79b36;
+    border: none;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+    min-width: 110px;
+    display: block;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  .teeeeest .nav-link {
+    color: var(--black_color);
+  }
+  .teeeeest .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: var(--black_color);
+    margin: 0 10px;
+  }
+  .teeeeest .nav-pills .nav-link,
+  .nav-pills .show > .nav-link {
+    background-color: white;
+    margin: 0 10px;
+  }
+  .teeeeest .nav-link i {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  .teeeeest .prv_order {
+    color: #f79b36;
+  }
+  .wrapper-class {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper-class p {
+    color: var(--black_color) !important;
+  }
+  .wrapper-class div {
+    color: red;
+  }
+  .wrapper-class div i {
+    color: red !important;
+    font-size: 16px !important;
+    margin: 0 10px;
+  }
+  .cart-item {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    column-gap: 30px;
+    margin: 15px 0;
+    padding: 15px;
+  }
+  .cart-item .image {
+    width: 120px;
+    height: 120px;
+  }
+  .cart-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .payment {
+    background: #f79b36;
+    border: none;
+    color: white;
+    /* margin: 30px auto; */
+    /* text-align: center; */
+    min-width: 110px;
+    /* display: block; */
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    /* transitio/n: all var(--transtion) ease-in-out; */
+    /* &:active {
+      background-color: var(--bg-btn);
+    } */
+  }
+  .payment a {
+    color: white;
+  }
+  .payment a i {
+    margin: 0 10px;
+  }
+  .total {
+    border-bottom: 1px solid var(--bg-btn);
+    border-radius: 15px 15px 0px 0px;
+    /* box-shadow: ; */
+    box-shadow: 2px 2px 12px 2px #dbd7d724;
+  }
+  .total_price p:nth-child(2) span {
+    color: #f79b36;
+  }
+</style>

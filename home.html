@@ -24,8 +24,10 @@
     <script src="splide/dist/js/splide.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <div class="mycontainer">
+      <header
+        class="bg-white mb-4 p-3 d-flex align-items-center justify-content-between"
+      >
         <!-- show mobile -->
         <div class="mobile_screen">
           <button
@@ -58,18 +60,32 @@
                   <img src="./image/3azmak.png" alt="3azmak_title" />
                 </div>
                 <h2 class="name">فهد الغامري</h2>
-                <ul>
-                  <li>تغيير اللغة</li>
-                  <li>الإعدادت</li>
-                  <li>الشروط والأحكام</li>
-                  <li>
-                    <a href="contactUS.html" target="_blank"> تواصل معنا</a>
+                <ul class="p-0">
+                  <li class="my-4">
+                    <i class="fa-solid fa-globe mx-2"></i> تغيير اللغة
                   </li>
-                  <li>
-                    <a href="aboutApp.html" target="_blank"> حول التطبيق</a>
+                  <li class="my-4">
+                    <i class="fa-solid fa-gear mx-2"></i> الإعدادت
+                  </li>
+                  <li class="my-4">
+                    <a href="Terms&Conditions.html" target="_blank">
+                      <i class="fa-solid fa-file-contract mx-2"></i> الشروط
+                      والأحكام</a
+                    >
+                  </li>
+                  <li class="my-4">
+                    <a href="contactUS.html" target="_blank">
+                      <i class="fa-solid fa-envelope mx-2"></i> تواصل معنا</a
+                    >
+                  </li>
+                  <li class="my-4">
+                    <a href="aboutApp.html" target="_blank">
+                      <i class="fa-solid fa-circle-exclamation mx-2"></i> حول
+                      التطبيق</a
+                    >
                   </li>
                 </ul>
-                <button>
+                <button class="joinUs_btn">
                   <a href="joinUs.html" target="_blank"> انضم إلينا</a>
                 </button>
               </div>
@@ -77,26 +93,30 @@
           </div>
         </div>
         <div class="info">
-          <ul>
+          <ul class="d-flex align-items-center justify-content-center">
             <li>
-              <button>
+              <button class="joinUs_btn">
                 <a href="joinUs.html" target="_blank"> انضم إلينا</a>
               </button>
             </li>
             <li>فهد الغامري</li>
             <li>تغيير اللغة</li>
             <li>الإعدادت</li>
-            <li>الشروط والأحكام</li>
+            <li>
+              <a href="Terms&Conditions.html" target="_blank">
+                الشروط والأحكام</a
+              >
+            </li>
             <li><a href="contactUS.html" target="_blank"> تواصل معنا</a></li>
             <li><a href="aboutApp.html" target="_blank"> حول التطبيق</a></li>
           </ul>
         </div>
         <div class="icons">
-          <i class="fa-regular fa-bell"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-bell mx-3"></i>
+          <i class="fa-solid fa-magnifying-glass mx-3"></i>
         </div>
       </header>
-      <main>
+      <main class="px-4 py-1">
         <div class="slider">
           <div
             id="carouselExampleControls"
@@ -138,7 +158,9 @@
           </div>
         </div>
         <!-- end slider  -->
-        <div class="location_branch">
+        <div
+          class="location_branch my-4 d-flex align-items-center justify-content-between"
+        >
           <div>
             <button
               class="btn btn_custom"
@@ -178,6 +200,7 @@
                     />
                     <label for="city1">الدمام</label>
                   </div>
+                  <hr />
                   <div>
                     <input
                       type="radio"
@@ -187,6 +210,7 @@
                     />
                     <label for="city2">الرياض</label>
                   </div>
+                  <hr />
                   <div>
                     <input
                       type="radio"
@@ -196,6 +220,7 @@
                     />
                     <label for="city3">مكة المكرمة</label>
                   </div>
+                  <hr />
                   <div>
                     <input
                       type="radio"
@@ -205,6 +230,7 @@
                     />
                     <label for="city4"> اسم المدينة</label>
                   </div>
+                  <hr />
                   <div>
                     <input
                       type="radio"
@@ -214,6 +240,7 @@
                     />
                     <label for="city5"> اسم المدينة</label>
                   </div>
+                  <hr />
                   <input type="submit" value="حفظ" />
                 </form>
               </div>
@@ -316,102 +343,128 @@
             role="tabpanel"
             aria-labelledby="home-tab"
           >
-            <div class="row">
+            <div class="row my-3">
               <div class="col-6">
-                <div class="list_Galler">
+                <div class="list_Galler th_large p-2" id="product1">
                   <div class="image">
                     <a href="productDetails.html">
                       <img src="./image/cover1.jpg" alt="" />
                     </a>
                   </div>
-                  <div class="content_list">
+                  <div class="content_list p-2">
                     <h3>اسم الوجبة</h3>
                     <p>وصف الوجبة</p>
-                    <div class="more_details">
+                    <div
+                      class="more_details d-flex align-items-center justify-content-between"
+                    >
                       <div class="action">
-                        <i class="fa-solid fa-cart-plus"></i>
+                        <button
+                          id="addToCartBtn"
+                          class="cart-btn"
+                          data-product-id="product1"
+                        >
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </button>
                         <i class="fa-solid fa-share-nodes"></i>
                       </div>
                       <div class="price">
+                        <span>50</span>
                         <small> ر.س</small>
-                        <span>40</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-6">
-                <div class="list_Galler">
+                <div class="list_Galler th_large p-2" id="product2">
                   <div class="image">
                     <a href="productDetails.html">
                       <img id="productImage" src="./image/cover1.jpg" alt="" />
                     </a>
                   </div>
-                  <div class="content_list">
+                  <div class="content_list p-2">
                     <h3>اسم الوجبة</h3>
                     <p>وصف الوجبة</p>
-                    <div class="more_details">
-                      <!-- <div class="action">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div> -->
+                    <div
+                      class="more_details d-flex align-items-center justify-content-between"
+                    >
                       <div class="action">
-                        <button id="addToCartBtn" class="cart-btn">
-                          <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        <button
+                          id="addToCartBtn"
+                          class="cart-btn"
+                          data-product-id="product2"
+                        >
+                          <i class="fa-solid fa-cart-plus"></i>
                         </button>
                         <i class="fa-solid fa-share-nodes"></i>
                       </div>
                       <div class="price">
+                        <span>60</span>
                         <small> ر.س</small>
-                        <span>40</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row my-3">
               <div class="col-6">
-                <div class="list_Galler">
+                <div class="list_Galler th_large p-2" id="product3">
                   <div class="image">
                     <a href="productDetails.html">
                       <img src="./image/cover1.jpg" alt="" />
                     </a>
                   </div>
-                  <div class="content_list">
+                  <div class="content_list p-2">
                     <h3>اسم الوجبة</h3>
                     <p>وصف الوجبة</p>
-                    <div class="more_details">
+                    <div
+                      class="more_details d-flex align-items-center justify-content-between"
+                    >
                       <div class="action">
-                        <i class="fa-solid fa-cart-plus"></i>
+                        <button
+                          id="addToCartBtn"
+                          class="cart-btn"
+                          data-product-id="product3"
+                        >
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </button>
                         <i class="fa-solid fa-share-nodes"></i>
                       </div>
                       <div class="price">
-                        <small> ر.س</small>
                         <span>40</span>
+                        <small> ر.س</small>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-6">
-                <div class="list_Galler">
+                <div class="list_Galler th_large p-2" id="product4">
                   <div class="image">
                     <a href="productDetails.html">
                       <img src="./image/cover1.jpg" alt="" />
                     </a>
                   </div>
-                  <div class="content_list">
+                  <div class="content_list p-2">
                     <h3>اسم الوجبة</h3>
                     <p>وصف الوجبة</p>
-                    <div class="more_details">
+                    <div
+                      class="more_details d-flex align-items-center justify-content-between"
+                    >
                       <div class="action">
-                        <i class="fa-solid fa-cart-plus"></i>
+                        <button
+                          id="addToCartBtn"
+                          class="cart-btn"
+                          data-product-id="product4"
+                        >
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </button>
                         <i class="fa-solid fa-share-nodes"></i>
                       </div>
                       <div class="price">
-                        <small> ر.س</small>
                         <span>40</span>
+                        <small> ر.س</small>
                       </div>
                     </div>
                   </div>
@@ -419,65 +472,26 @@
               </div>
             </div>
           </div>
+          <!-- end home-tab -->
           <div
             class="tab-pane fade"
             id="profile"
             role="tabpanel"
             aria-labelledby="profile-tab"
           >
-            <div class="list_Gallery">
+            <div class="list_Gallery my-3">
               <div class="image">
                 <a href="productDetails.html">
                   <img src="./image/cover1.jpg" alt="" />
                 </a>
               </div>
-              <div class="content_list">
+              <div class="content_list p-2">
                 <h3>اسم الوجبة</h3>
+
                 <p>
                   وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
                   الوجبة هنا وصف قصير عن الوجبة هنا
                 </p>
-                <div class="more_details">
-                  <div class="action">
-                    <i class="fa-solid fa-cart-plus"></i>
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </div>
-                  <div class="price">
-                    <small> ر.س</small>
-                    <span>40</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="list_Gallery">
-              <div class="image">
-                <a href="productDetails.html">
-                  <img src="./image/cover1.jpg" alt="" />
-                </a>
-              </div>
-              <div class="content_list">
-                <h3>اسم الوجبة</h3>
-                <p>
-                  وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
-                  الوجبة هنا وصف قصير عن الوجبة هنا
-                </p>
-                <div class="more_details">
-                  <div class="action">
-                    <i class="fa-solid fa-cart-plus"></i>
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </div>
-                  <div class="price">
-                    <small> ر.س</small>
-                    <span>40</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="list_Gallery">
-              <div class="image"><img src="./image/cover1.jpg" alt="" /></div>
-              <div class="content_list">
-                <h3>اسم الوجبة</h3>
-                <p>وصف الوجبة</p>
                 <div class="more_details">
                   <div class="action">
                     <i class="fa-solid fa-cart-plus"></i>
@@ -571,10 +585,10 @@
           <a href="home.html" target="_blank"> الرئيسية</a>
         </div>
         <div class="myorder d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank">
+          <a href="cart.html" target="_blank">
             <i class="fa-solid fa-cart-shopping"></i
           ></a>
-          <a href="home.html" target="_blank"> طلباتي</a>
+          <a href="cart.html" target="_blank"> طلباتي</a>
         </div>
         <div class="elwlaa d-flex flex-column align-items-center">
           <a href="home.html" target="_blank">
@@ -627,53 +641,68 @@
       }
     </script>
     <script>
-      // Function to add the product to the cart
-      function addToCart() {
-        // Get the product details
-        const productName =
-          document.querySelector(".content_list h3").textContent;
-        const productPrice = document.querySelector(".price span").textContent;
-        const productImage = document.getElementById("productImage").src;
+      const addToCartButtons = document.querySelectorAll(".cart-btn");
+      addToCartButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const productId = this.dataset.productId;
+          const productContainer = document.getElementById(productId);
+          const productName =
+            productContainer.querySelector(".content_list h3").textContent;
+          const productPrice =
+            productContainer.querySelector(".price span").textContent;
+          const productImage = productContainer.querySelector(".image img").src;
 
-        // Check if cart exists in localStorage
-        let cartItems = localStorage.getItem("cartItems");
-        if (!cartItems) {
-          // If cart does not exist, create an empty cart
-          cartItems = [];
-        } else {
-          // If cart exists, parse the JSON string to an array
-          cartItems = JSON.parse(cartItems);
-        }
+          addToCart(productId, productName, productPrice, productImage);
+        });
+      });
 
-        // Check if the product already exists in the cart
+      function addToCart(productId, productName, productPrice, productImage) {
+        // Check for existing product in cart
         const existingProduct = cartItems.find(
-          (item) => item.name === productName
+          (item) => item.productId === productId
         );
+
         if (existingProduct) {
-          // If the product exists, increment the quantity
-          existingProduct.quantity += 1;
+          // Increase quantity if product exists
+          existingProduct.quantity++;
         } else {
-          // If the product does not exist, add it to the cart
-          const product = {
-            name: productName,
-            price: productPrice,
-            image: productImage,
+          // Add new product to cart
+          cartItems.push({
+            productId,
+            productName,
+            productPrice,
+            productImage,
             quantity: 1,
-          };
-          cartItems.push(product);
+          });
         }
 
-        // Store the updated cart in localStorage
+        // Store updated cart items in local storage
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-        // Display a success message (you can customize this as needed)
-        alert("Item added to cart!");
+        // Display updated cart items (implement this section)
       }
 
-      // Attach the addToCart function to the button's click event
-      document
-        .getElementById("addToCartBtn")
-        .addEventListener("click", addToCart);
+      // Retrieve cart items from local storage on page load
+      window.addEventListener("load", () => {
+        const storedCartItems = localStorage.getItem("cartItems");
+        if (storedCartItems) {
+          cartItems = JSON.parse(storedCartItems);
+          // Display retrieved cart items (implement this section)
+        }
+      });
+
+      // Define cartItems array to store cart data (retrieved from local storage if available)
+      let cartItems = localStorage.getItem("cartItems")
+        ? JSON.parse(localStorage.getItem("cartItems"))
+        : [];
+      const uniqueProductIds = [
+        ...new Set(cartItems.map((item) => item.productId)),
+      ];
+      const numberOfUniqueProductsAdded = uniqueProductIds.length;
+      const numberProduct = localStorage.setItem(
+        "numberProduct",
+        numberOfUniqueProductsAdded
+      );
     </script>
   </body>
 </html>

@@ -1,30 +1,7 @@
 @import url('../css/header.css');
 @import url('./global.css');
-
-i{
-    font-size: 20px;
-}
-// .container{
-//     width: 45% !important;
-//     direction: rtl !important;
-//     // width: 750px !important;
-//     margin: auto;
-//     // height: 100vh;
-//     background: #F8F8F8;
-//     font-family: Cairo;
-//     padding: 0;
-// }
-:root{
-    --main_color:#F79B36;
-  }
 .slider{
     width: 100%;
-}
-.location_branch{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px 0;
 }
 .offcanvas-backdrop {
     width: 0vw !important; 
@@ -36,7 +13,7 @@ i{
 }
 .offcanvas.offcanvas-bottom {
     height: 55%;
-    box-shadow: 2px 5px 2px 2px #dbd7d7;
+    box-shadow: 1px 1px 1px 1px #dbd7d7;
     border-radius: 10px;
 }
 .offcanvas-title{
@@ -49,24 +26,7 @@ form{
     hr{
         color: var(--second_color);
     }
-    // width: 70%;
     margin: auto;
-    // height: 100%;
-    // background-color: red;
-    // input[type="submit"]{
-    //     // background: transparent;
-    //     background: #F79B36;
-    //     border: none;
-    //     color: white;
-    //     margin: 30px  auto;
-    //     text-align: center;
-    //     width: 110px;
-    //     display: block;
-    //     padding: 8px ;
-    //     font-size: 20px;
-    //     border-radius: 8px;
-
-    // }
     input[type="radio"] {
         appearance: none;
         -moz-appearance: none;
@@ -77,9 +37,7 @@ form{
         border: 2px solid hsl(0, 0%, 83%);
         outline: none;
       }
-  
-      /* Style the checked radio button */
-      input[type="radio"]:checked {
+        input[type="radio"]:checked {
         border: 2px solid hsl(0, 0%, 83%);
         // border: 2px solid #F79B36;
         
@@ -87,11 +45,6 @@ form{
         background-color: #F79B36;
        
       }
-}
-.btn-close:focus {
-    // outline: 0;
-    box-shadow: 0 0 0 0.25rem #F79B36;
-    opacity: 0.5;
 }
 form div {
     margin: 15px 0;
@@ -102,45 +55,16 @@ form div {
     }
 
 }
-// header{
-//     background-color: white;
-//     height: 60px;
-//     margin-bottom: 20px;
-//     padding: 10px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     // align-items: center;
-//     // box-shadow: 2px 50px 2px 2px white;
-
-
-// }
-
-.btn_custom{
-    // background-color: red;
-    background: #EAEAEA;
-
-}
-.btn_custom:focus , .btn_custom:hover {
-    // background-color: red;
-    background: #EAEAEA;
-    outline: none;
-    border-color: transparent;
-
+.male , .female{
+    margin: 0px 0;
 }
 @media(min-width:769px) and (max-width:1024px) {
-    .container{
-        width: 80% !important;
-    }
     .mobile_screen{
         display: none !important;
     }
     
 }
 @media(max-width:768px) {
-    .container{
-        width: 100% !important;
-    }
     .mobile_screen{
         display: block !important;
     }
@@ -152,25 +76,19 @@ form div {
     }
     
 }
-.mobile_screen   , .title{
+.mobile_screen{
     display: none;
 }
-
-.slidere{
-    .testbox{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+.wrap_product{
+border-radius: 15px;
+background-color: red;
+.image{
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
     }
-    // .carousel-item{
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     img{
-    //         width: 350px;
-    //         height: 50px;
-    //     }
-    // }
+}
 }
 // list 
 .list{
@@ -229,21 +147,15 @@ form div {
 }
 .list_Gallery{
     box-shadow: 0 5px 11px 1px rgb(0 0 0 / 27%);
-    margin: 20px 0;
     border-radius: 15px;
-    // direction: rtl;
-
     .image{
         width: 100%;
         img{
             width: 100%;
             object-fit: cover;
-
         }
     }
     .content_list{
-        padding: 10px 25px;
-        text-align: end;
         .more_details{
             display: flex;
             align-items: center;
@@ -275,27 +187,23 @@ form div {
     }
 }
 .list_Galler{
-    // box-shadow: 0 5px 11px 1px rgb(0 0 0 / 27%);
-    margin: 20px 0;
-    border: 1px solid #CCC;    border-radius: 15px;
-    // direction: rtl;
-    padding: 5px;
-
+    border: 1px solid #CCC;    
+    border-radius: 15px;
     .image{
         width: 100%;
         img{
             width: 100%;
             object-fit: cover;
-
         }
     }
     .content_list{
-        padding: 10px 25px;
-        text-align: end;
+        h3{
+            font-size: 18px;
+        }
         .more_details{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            .action button{
+                border: none;
+            }
             .action i {
                 width: 60px;
                 height: 40px;
