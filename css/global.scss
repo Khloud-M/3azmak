@@ -51,7 +51,7 @@ a{
         }
        
 }
-.join_us{
+.join_us , .inner_wrap{
   border-radius: 10px;
 }
 .header{
@@ -91,7 +91,7 @@ input[type="submit"]{
     color: #c7c7c7;
     font-size: 14px;
   }
-  .container_input {
+  .container_input , #verificationContainer {
     display: flex;
     align-items: center;
     border: 1px solid #f5f5f5;
@@ -173,7 +173,7 @@ footer{
     overflow: hidden;
     padding: 0;
     margin:auto ;
-    background-color: red;
+    // background-color: red;
   }
   
 }

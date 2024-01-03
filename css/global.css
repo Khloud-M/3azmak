@@ -58,7 +58,7 @@ a:hover {
   color: #303030;
 }
 
-.join_us {
+.join_us, .inner_wrap {
   border-radius: 10px;
 }
 
@@ -98,7 +98,7 @@ input[type=submit]:active {
   color: #c7c7c7;
   font-size: 14px;
 }
-.contact_us .container_input, .join_us .container_input, .edit_myAccount .container_input {
+.contact_us .container_input, .contact_us #verificationContainer, .join_us .container_input, .join_us #verificationContainer, .edit_myAccount .container_input, .edit_myAccount #verificationContainer {
   display: flex;
   align-items: center;
   border: 1px solid #f5f5f5;
@@ -107,17 +107,17 @@ input[type=submit]:active {
   margin: 15px 0;
   /* Style the checked radio button */
 }
-.contact_us .container_input input, .contact_us .container_input textarea, .contact_us .container_input select, .join_us .container_input input, .join_us .container_input textarea, .join_us .container_input select, .edit_myAccount .container_input input, .edit_myAccount .container_input textarea, .edit_myAccount .container_input select {
+.contact_us .container_input input, .contact_us .container_input textarea, .contact_us .container_input select, .contact_us #verificationContainer input, .contact_us #verificationContainer textarea, .contact_us #verificationContainer select, .join_us .container_input input, .join_us .container_input textarea, .join_us .container_input select, .join_us #verificationContainer input, .join_us #verificationContainer textarea, .join_us #verificationContainer select, .edit_myAccount .container_input input, .edit_myAccount .container_input textarea, .edit_myAccount .container_input select, .edit_myAccount #verificationContainer input, .edit_myAccount #verificationContainer textarea, .edit_myAccount #verificationContainer select {
   margin: 0 10px;
   border: none;
   width: 100%;
   outline: none;
 }
-.contact_us .container_input select:focus, .join_us .container_input select:focus, .edit_myAccount .container_input select:focus {
+.contact_us .container_input select:focus, .contact_us #verificationContainer select:focus, .join_us .container_input select:focus, .join_us #verificationContainer select:focus, .edit_myAccount .container_input select:focus, .edit_myAccount #verificationContainer select:focus {
   border: none;
   box-shadow: none;
 }
-.contact_us .container_input input[type=radio], .join_us .container_input input[type=radio], .edit_myAccount .container_input input[type=radio] {
+.contact_us .container_input input[type=radio], .contact_us #verificationContainer input[type=radio], .join_us .container_input input[type=radio], .join_us #verificationContainer input[type=radio], .edit_myAccount .container_input input[type=radio], .edit_myAccount #verificationContainer input[type=radio] {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -127,7 +127,7 @@ input[type=submit]:active {
   border: 2px solid hsl(0, 0%, 83%);
   outline: none;
 }
-.contact_us .container_input input[type=radio]:checked, .join_us .container_input input[type=radio]:checked, .edit_myAccount .container_input input[type=radio]:checked {
+.contact_us .container_input input[type=radio]:checked, .contact_us #verificationContainer input[type=radio]:checked, .join_us .container_input input[type=radio]:checked, .join_us #verificationContainer input[type=radio]:checked, .edit_myAccount .container_input input[type=radio]:checked, .edit_myAccount #verificationContainer input[type=radio]:checked {
   border: 2px solid hsl(0, 0%, 83%);
   background-color: #F79B36;
 }
@@ -174,6 +174,5 @@ footer div a:nth-child(2) {
     overflow: hidden;
     padding: 0;
     margin: auto;
-    background-color: red;
   }
 }/*# sourceMappingURL=global.css.map */
