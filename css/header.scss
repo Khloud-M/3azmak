@@ -32,11 +32,13 @@ header{
       .image{
         width: max-content;
         margin: auto;
+        margin-top: -30px;
       }
         .name{
             text-align: center;
             color: var(--main_color);
-            margin: 50px;
+            // margin: 25px;
+            margin-bottom: 30px;
             font-size:30px ;
             font-weight: 700;
         }

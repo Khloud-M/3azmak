@@ -15,7 +15,7 @@
 }
 
 .offcanvas.offcanvas-bottom {
-  height: 55%;
+  height: 77%;
   box-shadow: 1px 1px 1px 1px #dbd7d7;
   border-radius: 10px;
 }
@@ -159,7 +159,16 @@ form div label {
 
 @media (max-width: 768px) {
   .list .image {
-    width: 40%;
+    width: 50%;
+  }
+  .content_list h3 {
+    font-size: 14px;
+  }
+  .content_list p {
+    font-size: 13px;
+  }
+  .content_list .action i {
+    margin-top: 10px;
   }
 }
 .list_Gallery, .list {
