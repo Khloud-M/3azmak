@@ -158,9 +158,6 @@
 form {
   margin: auto;
 }
-form hr {
-  color: var(--second_color);
-}
 form input[type=radio] {
   appearance: none;
   -moz-appearance: none;
@@ -176,12 +173,8 @@ form input[type=radio]:checked {
   background-color: #F79B36;
 }
 
-form div {
-  margin: 15px 0;
-}
 form div label {
   margin: 0 10px;
-  font-family: Cairo;
   font-size: 18px;
 }
 
@@ -195,74 +188,6 @@ form div label {
 
 .nav-tabs .nav-link:hover {
   color: black;
-}
-
-.content_listt {
-  padding: 10px;
-  margin: 15px 0;
-}
-.content_listt h3 {
-  font-weight: 500;
-}
-
-.details_more {
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.details_more h5, .details_more p {
-  display: inline-block;
-}
-
-.choose_details {
-  background-color: white;
-  border-radius: 15px;
-  padding-top: 15px;
-}
-.choose_details form {
-  width: 100%;
-}
-.choose_details .addition {
-  color: white;
-  background-color: #F79B36;
-  width: 100%;
-  border-radius: 0px 0 15px 15px;
-}
-.choose_details .addition button {
-  border: none;
-}
-
-input[type=checkbox] {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 2px;
-  border: 2px solid hsl(0, 0%, 83%);
-  outline: none;
-}
-
-input[type=checkbox]:checked {
-  background-color: #F79B36;
-}
-
-.share_icon p {
-  background-color: white;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.share_icon p:hover {
-  background-color: var(--main_color);
-  color: white;
-}
-.share_icon i {
-  font-size: 16px;
-  margin: 0 10px;
 }
 
 .content_list p {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>معلومات مرسل العزيمة</title>
+    <title>متابعة الدفع</title>
     <!-- //font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
@@ -25,55 +25,25 @@
         <a href="home.html" style="color: black">
           <i class="fa-solid fa-angle-right"></i>
         </a>
-        <h6>معلومات مرسل العزيمة</h6>
+        <h6>متابعة الدفع</h6>
       </div>
 
       <div
         class="join_us d-flex flex-column align-items-center px-5 m-5 justify-content-center"
       >
-        <p>
-          حتى تتمكن من إرسال عزيمة دون تسجيل دخول، يرجى إدخال المعلومات التالية:
-        </p>
         <form>
           <div class="inner_wrap bg-white p-4">
-            <div class="name">
-              <label for="name">الاسم :</label>
-              <div class="container_input">
-                <i class="fa fa-user"></i>
-                <input type="text" id="name" placeholder=" الاسم من فضلك" />
-              </div>
+            <h3>اختر طريقة الدفع</h3>
+            <div class="apple_pay">
+              <input type="radio" id="apple_pay" name="pay" />
+              <label for="apple_pay"> Apple Pay</label>
             </div>
-            <div class="phone_number">
-              <label for="type_company"> رقم الهاتف :</label>
-              <div class="container_input">
-                <i class="fa fa-phone"></i>
-                <input
-                  style="direction: rtl"
-                  type="tel"
-                  id="phone_number"
-                  placeholder="اكتب رقم التواصل من فضلك"
-                />
-              </div>
-            </div>
-            <div id="loadingContainer" style="display: none">
-              <div id="loadingAnimation" class="loading-animation"></div>
-              <div id="loadingAnimation" class="loading-animation"></div>
-              <div id="loadingAnimation" class="loading-animation"></div>
-            </div>
-            <div id="verificationContainer" style="display: none">
-              <label for="verificationCodeInput"> ادخل رقم التحقق</label>
-              <input
-                type="text"
-                id="verificationCodeInput"
-                placeholder="رقم التحقق "
-              />
-              <!-- <button id="verifyButton">Verify</button> -->
+            <div class="Credit_pay">
+              <input type="radio" id="Credit_pay" name="pay" />
+              <label for="Credit_pay"> Credit Card</label>
             </div>
           </div>
-          <input type="submit" id="submitButton" value="إرسال رمز التحقيق " />
-          <a href="way_payment.html">
-            <input type="submit" value="  متابعة إلي الدفع " />
-          </a>
+          <input type="submit" id="submitButton" value=" الدفع " />
         </form>
       </div>
       <footer

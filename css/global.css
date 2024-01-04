@@ -14,6 +14,10 @@
   font-family: "Readex Pro", sans-serif;
 }
 
+hr {
+  color: var(--second_color);
+}
+
 .btn_custom {
   background: #EAEAEA;
 }
