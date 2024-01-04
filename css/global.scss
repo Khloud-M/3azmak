@@ -16,6 +16,10 @@
 hr{
   color: var(--second_color);
 }
+body {
+    font-family: 'Readex Pro', sans-serif;   
+     direction: rtl;
+}
 .btn_custom{
   background: #EAEAEA;
   &:focus , &:hover{
@@ -29,10 +33,6 @@ hr{
   box-shadow: 0 0 0 0.25rem #F79B36;
   opacity: 0.5;
 }
-body {
-    font-family: 'Readex Pro', sans-serif;   
-     direction: rtl;
-}
 ::placeholder{
   font-size:13px ;
 }
@@ -43,14 +43,13 @@ body {
   background: #F8F8F8;
   padding: 0;
   // min-height: 90vh;
-}
- 
+} 
 a{
-        text-decoration: none;
-        color: #303030;
-        &:hover{
-          color: #303030;
-        }
+  text-decoration: none;
+  color: #303030;
+  &:hover{
+    color: #303030;
+  }
        
 }
 .join_us , .inner_wrap{
