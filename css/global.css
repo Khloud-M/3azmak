@@ -162,6 +162,10 @@ footer div a:nth-child(2) {
   line-height: 15px;
 }
 
+input[type=checkbox] {
+  accent-color: var(--main_color);
+}
+
 @media (max-width: 768px) {
   .mycontainer {
     width: 100% !important;

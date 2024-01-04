@@ -158,7 +158,9 @@ footer{
     }
   }
 }
-
+input[type="checkbox"] {
+  accent-color: var(--main_color);
+}
 @media(max-width:768px) {
   .mycontainer{
     width: 100% !important;
