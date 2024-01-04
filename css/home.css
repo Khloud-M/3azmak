@@ -139,10 +139,10 @@
     width: 50%;
   }
   .content_list h3 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .content_list p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .content_list .more_details .action i {
     width: 40px !important;
