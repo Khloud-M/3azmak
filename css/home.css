@@ -151,8 +151,6 @@
     margin-top: 10px;
   }
   .content_list .more_details .price span {
-    color: var(--main_color);
-    display: inline-block;
     font-weight: 700;
     font-size: 16px;
   }

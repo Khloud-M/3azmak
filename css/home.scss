@@ -136,7 +136,6 @@
             font-size: 12px;
         }
         .more_details{
-            // background-color: red;
             .action i {
                 width: 40px !important;
                 height: 40px !important;
@@ -145,8 +144,6 @@
             }
             .price{
                 span{
-                    color: var(--main_color);
-                    display: inline-block;
                     font-weight: 700;
                     font-size: 16px;
                 }
