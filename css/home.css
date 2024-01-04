@@ -144,11 +144,20 @@
   .content_list p {
     font-size: 13px;
   }
-  .content_list .action i {
+  .content_list .more_details .action i {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 20px;
     margin-top: 10px;
   }
+  .content_list .more_details .price span {
+    color: var(--main_color);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+  }
   .list_Galler .image {
-    height: 120px;
+    height: 160px;
   }
   .list_Galler .image img {
     height: 100%;

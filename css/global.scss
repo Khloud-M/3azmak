@@ -164,9 +164,9 @@ footer{
     padding: 0;
     margin: auto;
   }
-  .header{
-    column-gap: 150px; 
-  }
+  // .header{
+  //   column-gap: 150px; 
+  // }
 }
 @media(min-width:769px ) and (max-width:1200px) {
   .mycontainer{
@@ -174,7 +174,6 @@ footer{
     overflow: hidden;
     padding: 0;
     margin:auto ;
-    // background-color: red;
   }
   
 }

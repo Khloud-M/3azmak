@@ -135,13 +135,27 @@
         p{
             font-size: 13px;
         }
-        .action  i {
-            margin-top: 10px;
+        .more_details{
+            // background-color: red;
+            .action i {
+                width: 40px !important;
+                height: 40px !important;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+            .price{
+                span{
+                    color: var(--main_color);
+                    display: inline-block;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
         }
     }
     .list_Galler{
     .image{
-        height: 120px;
+        height: 160px;
         img{
             height: 100%;
             border-radius: 15px;

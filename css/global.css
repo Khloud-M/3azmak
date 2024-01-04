@@ -167,10 +167,6 @@ footer div a:nth-child(2) {
     padding: 0;
     margin: auto;
   }
-  .header {
-    -moz-column-gap: 150px;
-         column-gap: 150px;
-  }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .mycontainer {
