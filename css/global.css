@@ -71,11 +71,21 @@ a:hover {
        column-gap: 300px;
   height: 55px;
 }
-.header h6 {
+.header a i {
+  font-size: 20px;
+}
+.header h5 {
   font-weight: 400;
-  color: #303030;
+  line-height: 55px;
+  color: var(--black_color);
 }
 
+@media (max-width: 768px) {
+  .header {
+    -moz-column-gap: 150px;
+         column-gap: 150px;
+  }
+}
 input[type=submit] {
   background: #F79B36;
   border: none;

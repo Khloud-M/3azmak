@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>انضم إلينا</title>
     <!-- //font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
     <!-- //bootstrap -->
@@ -20,18 +22,18 @@
     <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="mycontainer">
       <div class="header d-flex align-items-center bg-white p-3">
         <a href="home.html" style="color: black">
           <i class="fa-solid fa-angle-right"></i>
         </a>
-        <h6>انضم إلينا</h6>
+        <h5>انضم إلينا</h5>
       </div>
       <div
         class="join_us d-flex flex-column align-items-center px-5 m-5 justify-content-center bg-white"
       >
         <img src="./image/3azmak.png" alt="logo" />
-        <p>
+        <p class="mb-3">
           إنضم إلى قائمة عملائنا المميزين، يرجى تعبئة الحقول وسيتواصل معك فريقنا
           في أقرب وقت
         </p>
@@ -46,7 +48,7 @@
           <div class="email">
             <label for="name">البريد الإلكتروني :</label>
             <div class="container_input">
-              <i class="fa fa-email"></i>
+              <i class="fa-solid fa-envelope"></i>
               <input
                 type="email"
                 id="email"
@@ -57,7 +59,7 @@
           <div class="name_company">
             <label for="name_company">اسم الشركة :</label>
             <div class="container_input">
-              <i class="fa fa-email"></i>
+              <i class="fa-solid fa-building"></i>
               <input
                 type="text"
                 id="name_company"
@@ -88,11 +90,11 @@
               />
             </div>
           </div>
-          <input type="submit" value="إرسال" />
+          <input type="submit" value="إرسال" class="my-5" />
         </form>
       </div>
       <footer
-        class="bg-white mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
+        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-around"
       >
         <div class="mainHome d-flex flex-column align-items-center">
           <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
@@ -104,12 +106,6 @@
           ></a>
           <a href="cart.html" target="_blank"> طلباتي</a>
         </div>
-        <div class="elwlaa d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank">
-            <i class="fa-solid fa-gift"></i
-          ></a>
-          <a href="home.html" target="_blank"> الولاء</a>
-        </div>
         <div class="myAccount d-flex flex-column align-items-center">
           <a href="myAccount.html" target="_blank">
             <i class="fa-solid fa-user"></i
@@ -120,3 +116,12 @@
     </div>
   </body>
 </html>
+<style>
+  .join_us img {
+    margin-top: -50px;
+  }
+  .join_us p {
+    font-weight: 300;
+    margin-top: -50px;
+  }
+</style>

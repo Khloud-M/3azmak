@@ -58,9 +58,18 @@ a{
 .header{
   column-gap: 300px;
   height: 55px;
-  h6{
+  a i {
+    font-size: 20px;
+  }
+  h5{
     font-weight: 400;
-    color: #303030;
+    line-height: 55px;
+    color: var(--black_color);
+  }
+}
+@media(max-width:768px) {
+   .header{
+    column-gap: 150px; 
   }
 }
 input[type="submit"]{
@@ -167,9 +176,6 @@ input[type="checkbox"] {
     padding: 0;
     margin: auto;
   }
-  // .header{
-  //   column-gap: 150px; 
-  // }
 }
 @media(min-width:769px ) and (max-width:1200px) {
   .mycontainer{

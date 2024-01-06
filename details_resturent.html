@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>عازمك</title>
+    <title>تفاصيل المطعم</title>
     <!-- //font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,98 +25,23 @@
   </head>
   <body>
     <div class="mycontainer">
-      <header
-        class="bg-white mb-4 p-3 d-flex align-items-center justify-content-between"
-      >
-        <!-- show mobile -->
-        <div class="mobile_screen">
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="fa-solid fa-bars"></i>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="container_ifno">
-                <div class="image">
-                  <img src="./image/3azmak.png" alt="3azmak_title" />
-                </div>
-                <h2 class="name">فهد الغامري</h2>
-                <ul class="p-0">
-                  <li class="my-4">
-                    <i class="fa-solid fa-globe mx-2"></i> تغيير اللغة
-                  </li>
-                  <li class="my-4">
-                    <i class="fa-solid fa-gear mx-2"></i> الإعدادت
-                  </li>
-                  <li class="my-4">
-                    <a href="Terms&Conditions.html" target="_blank">
-                      <i class="fa-solid fa-file-contract mx-2"></i> الشروط
-                      والأحكام</a
-                    >
-                  </li>
-                  <li class="my-4">
-                    <a href="contactUS.html" target="_blank">
-                      <i class="fa-solid fa-envelope mx-2"></i> تواصل معنا</a
-                    >
-                  </li>
-                  <li class="my-4">
-                    <a href="aboutApp.html" target="_blank">
-                      <i class="fa-solid fa-circle-exclamation mx-2"></i> حول
-                      التطبيق</a
-                    >
-                  </li>
-                </ul>
-                <button class="joinUs_btn">
-                  <a href="joinUs.html" target="_blank"> انضم إلينا</a>
-                </button>
-              </div>
-            </div>
+      <main class="px-3 py-1">
+        <div class="my-3 d-flex align-items-center justify-content-between">
+          <div class="logo d-flex align-items-center gap-2">
+            <img src="./image//logo.png" alt="logo" width="40" height="40" />
+            <h6>برغر كينغ</h6>
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="d-inline-block">3كم</p>
           </div>
         </div>
-        <div class="info">
-          <ul class="d-flex align-items-center justify-content-center">
-            <li>
-              <button class="joinUs_btn">
-                <a href="joinUs.html" target="_blank"> انضم إلينا</a>
-              </button>
-            </li>
-            <li>فهد الغامري</li>
-            <li>تغيير اللغة</li>
-            <li>الإعدادت</li>
-            <li>
-              <a href="Terms&Conditions.html" target="_blank">
-                الشروط والأحكام</a
-              >
-            </li>
-            <li><a href="contactUS.html" target="_blank"> تواصل معنا</a></li>
-            <li><a href="aboutApp.html" target="_blank"> حول التطبيق</a></li>
-          </ul>
-        </div>
-        <div class="icons">
-          <i class="fa-regular fa-bell mx-3"></i>
-          <i class="fa-solid fa-magnifying-glass mx-3"></i>
-        </div>
-      </header>
-      <main class="px-3 py-1">
+        <p class="description">
+          نبذة عن المطعم كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+          ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل
+          الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص
+          بديل لا علاقة له بالموضوع
+        </p>
         <div class="slider">
           <div
             id="carouselExampleControls"
@@ -158,141 +83,7 @@
           </div>
         </div>
         <!-- end slider  -->
-        <div
-          class="location_branch my-4 d-flex align-items-center justify-content-between"
-        >
-          <div>
-            <button
-              class="btn btn_custom"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasBottom"
-              aria-controls="offcanvasBottom"
-            >
-              تعديل
-            </button>
-
-            <div
-              class="offcanvas offcanvas-bottom"
-              tabindex="-1"
-              id="offcanvasBottom"
-              aria-labelledby="offcanvasBottomLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-                  اختر الفرع
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body small">
-                <form>
-                  <div>
-                    <input
-                      type="radio"
-                      id="city1"
-                      name="options"
-                      value="option1"
-                    />
-                    <label for="city1">الدمام</label>
-                  </div>
-                  <hr />
-                  <div>
-                    <input
-                      type="radio"
-                      id="city2"
-                      name="options"
-                      value="option2"
-                    />
-                    <label for="city2">الرياض</label>
-                  </div>
-                  <hr />
-                  <div>
-                    <input
-                      type="radio"
-                      id="city3"
-                      name="options"
-                      value="option2"
-                    />
-                    <label for="city3">مكة المكرمة</label>
-                  </div>
-                  <hr />
-                  <div>
-                    <input
-                      type="radio"
-                      id="city4"
-                      name="options"
-                      value="option2"
-                    />
-                    <label for="city4"> اسم المدينة</label>
-                  </div>
-                  <hr />
-                  <div>
-                    <input
-                      type="radio"
-                      id="city5"
-                      name="options"
-                      value="option2"
-                    />
-                    <label for="city5"> اسم المدينة</label>
-                  </div>
-                  <hr />
-                  <input type="submit" value="حفظ" />
-                </form>
-              </div>
-            </div>
-          </div>
-          <div>فرع الدمام</div>
-        </div>
-
-        <section class="splide my-5 story" aria-label="Basic Structure Example">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div><img src="./image/cover1.jpg" /></div>
-                <h6 class="my-2">عروض الفطور</h6>
-              </li>
-              <li class="splide__slide">
-                <img src="./image/cover1.jpg" />
-                <h6 class="my-2">حلويات</h6>
-              </li>
-              <li class="splide__slide">
-                <img src="./image/cover1.jpg" />
-                <h6 class="my-2">عروض الغداء</h6>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section
-          class="splide my-5 main_dish"
-          aria-label="Basic Structure Example"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="./image/cover1.jpg" />
-                <h6 class="text-center my-2">الأطباق الرئيسية</h6>
-              </li>
-              <li class="splide__slide">
-                <img src="./image/cover1.jpg" />
-                <h6 class="text-center my-2">حلويات</h6>
-              </li>
-              <li class="splide__slide">
-                <img src="./image/cover1.jpg" />
-                <h6 class="text-center my-2">المخبوزات</h6>
-              </li>
-              <li class="splide__slide">
-                <img src="./image/cover1.jpg" />
-                <h6 class="text-center my-2">المشروبات</h6>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active"
@@ -541,7 +332,7 @@
         </div>
       </main>
       <footer
-        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-around"
+        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
       >
         <div class="mainHome d-flex flex-column align-items-center">
           <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
@@ -563,40 +354,5 @@
     </div>
 
     <script src="js/bootstrap.bundle.js"></script>
-    <script>
-      // new Splide(".splide", {
-      //   // type: "loop",
-      //   perPage: 4,
-      //   rewind: true,
-      //   breakpoints: {
-      //     640: {
-      //       perPage: 2,
-      //     },
-      //   },
-      // }).mount();
-      var elms = document.getElementsByClassName("splide");
-
-      for (var i = 0; i < elms.length; i++) {
-        new Splide(elms[0], {
-          perPage: 4,
-          rewind: true,
-          breakpoints: {
-            640: {
-              perPage: 2,
-            },
-          },
-        }).mount();
-        new Splide(elms[1], {
-          perPage: 4,
-          rewind: true,
-          breakpoints: {
-            640: {
-              perPage: 2,
-            },
-          },
-        }).mount();
-      }
-    </script>
-    <script src="js/cart.js"></script>
   </body>
 </html>
