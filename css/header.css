@@ -49,9 +49,5 @@ header .info ul li {
 }
 .mobile_screen .container_ifno ul li {
   list-style: none;
-  border-top: 1px solid #EAEAEA;
   padding: 10px 0;
-}
-.mobile_screen .container_ifno ul li:last-child {
-  border-bottom: 1px solid #EAEAEA;
 }/*# sourceMappingURL=header.css.map */

@@ -49,11 +49,11 @@ header{
         }
         ul li {
             list-style: none;
-            border-top: 1px solid #EAEAEA;
+            // border-top: 1px solid #EAEAEA;
             padding: 10px 0; 
-            &:last-child{
-                border-bottom: 1px solid #EAEAEA;
-            }
+            // &:last-child{
+            //     border-bottom: 1px solid #EAEAEA;
+            // }
         }
     }
 }
