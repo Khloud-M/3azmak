@@ -76,14 +76,13 @@ a:hover {
 }
 .header h5 {
   font-weight: 400;
-  line-height: 55px;
   color: var(--black_color);
 }
 
 @media (max-width: 768px) {
   .header {
-    -moz-column-gap: 150px;
-         column-gap: 150px;
+    -moz-column-gap: 120px;
+         column-gap: 120px;
   }
 }
 input[type=submit] {
@@ -181,6 +180,12 @@ input[type=checkbox] {
     width: 100% !important;
     padding: 0;
     margin: auto;
+  }
+  ::-moz-placeholder {
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 10px;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
