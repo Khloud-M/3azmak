@@ -70,7 +70,10 @@
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <div id="cartItemsContainer" class="p-5 m-auto">
+            <!-- <div id="cartItemsContainer" class="p-5 m-auto">
+              <div class="product-num"></div>
+            </div> -->
+            <div calss="cartItemsContainer" class="p-5 m-auto">
               <div class="product-num"></div>
             </div>
           </div>
@@ -194,11 +197,14 @@
     </div>
     <script>
       const button = document.getElementById("pills-profile-tab");
+      const button2 = document.getElementById("pills-home-tab");
       const total = document.getElementById("total_followPayment");
 
       button.addEventListener("click", function () {
         total.style.display = "none";
-        console.log("action");
+      });
+      button2.addEventListener("click", function () {
+        total.style.display = "block";
       });
       const cartItems = JSON.parse(localStorage.getItem("cartItems"));
       const cartItemsContainer = document.getElementById("cartItemsContainer");
@@ -285,14 +291,14 @@
     font-weight: 400;
   }
   .myMeal {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     position: relative;
   }
   .myMeal img {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 13px;
     object-fit: cover;
     /* position: relative; */
   }
@@ -321,7 +327,8 @@
     font-weight: 500 !important;
     font-size: 16px !important;
   }
-  #cartItemsContainer {
+  #cartItemsContainer,
+  .cartItemsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
