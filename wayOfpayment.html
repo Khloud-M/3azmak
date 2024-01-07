@@ -34,16 +34,14 @@
         class="join_us d-flex flex-column align-items-center px-5 m-5 justify-content-center"
       >
         <form>
-          <div class="inner_wrap bg-white p-4">
-            <h3>اختر طريقة الدفع</h3>
-            <div class="apple_pay">
-              <input type="radio" id="apple_pay" name="pay" />
-              <label for="apple_pay"> Apple Pay</label>
-            </div>
-            <div class="Credit_pay">
-              <input type="radio" id="Credit_pay" name="pay" />
-              <label for="Credit_pay"> Credit Card</label>
-            </div>
+          <h6 class="my-2">اختر طريقة الدفع</h6>
+          <div class="apple_pay bg-white my-2 p-2">
+            <input type="radio" id="apple_pay" name="pay" />
+            <label for="apple_pay"> Apple Pay</label>
+          </div>
+          <div class="Credit_pay bg-white my-2 p-2">
+            <input type="radio" id="Credit_pay" name="pay" />
+            <label for="Credit_pay"> Credit Card</label>
           </div>
           <input type="submit" id="submitButton" value=" الدفع " />
         </form>
@@ -77,3 +75,9 @@
     </div>
   </body>
 </html>
+<style>
+  .Credit_pay,
+  .apple_pay {
+    border-radius: 10px;
+  }
+</style>
