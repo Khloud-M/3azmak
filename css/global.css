@@ -23,6 +23,23 @@ body {
   direction: rtl;
 }
 
+.restrotion {
+  border-radius: 10px;
+  border: 1px solid var(--bg-color);
+}
+
+.global_btn {
+  background: var(--main_color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: all var(--transtion) ease-in-out;
+  padding: 10px;
+}
+.global_btn:active, .global_btn:focus {
+  background-color: var(--bg-btn);
+}
+
 .btn_custom {
   background: #EAEAEA;
 }

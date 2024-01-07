@@ -136,30 +136,39 @@
               </div>
               <!-- Meals for each restaurant -->
               <div
-                class="footer_orderId d-flex align-items-center justify-content-between"
+                class="footer_orderId my-3 d-flex align-items-center justify-content-between"
               >
-                <span><small class="font-weight-bold"> 45</small> ر.س</span>
+                <span class="price"
+                  ><small class="font-weight-bold"> 45</small> ر.س</span
+                >
+                <div class="action_btn">
+                  <button class="restrotion bg-white mx-2 px-3 py-2">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    إعادة
+                  </button>
+                  <button class="global_btn">التفاصيل</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="total bg-white p-4 d-flex align-items-center justify-content-between"
-      >
-        <div class="total_price">
-          <p>الإجمالي</p>
-          <p><span> 91.0</span> ر.س</p>
-        </div>
-        <div class="payment">
-          <a href="follow_payment.html" target="_blank">
-            متابعة إلى الدفع
-            <i class="fa-solid fa-angle-left"></i>
-          </a>
+      <div class="total bg-white p-4" id="total_followPayment">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <div class="total_price">
+            <p>الإجمالي</p>
+            <p><span> 91.0</span> ر.س</p>
+          </div>
+          <div class="payment">
+            <a href="follow_payment.html" target="_blank">
+              متابعة إلى الدفع
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+          </div>
         </div>
       </div>
       <footer
-        class="bg-white px-4 py-3 d-flex align-items-center justify-content-between"
+        class="px-4 py-3 d-flex align-items-center justify-content-around"
       >
         <div class="mainHome d-flex flex-column align-items-center">
           <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
@@ -171,12 +180,6 @@
           ></a>
           <a href="cart.html" target="_blank"> طلباتي</a>
         </div>
-        <div class="elwlaa d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank">
-            <i class="fa-solid fa-gift"></i
-          ></a>
-          <a href="home.html" target="_blank"> الولاء</a>
-        </div>
         <div class="myAccount d-flex flex-column align-items-center">
           <a href="myAccount.html" target="_blank">
             <i class="fa-solid fa-user"></i
@@ -186,6 +189,13 @@
       </footer>
     </div>
     <script>
+      const button = document.getElementById("pills-profile-tab");
+      const total = document.getElementById("total_followPayment");
+
+      button.addEventListener("click", function () {
+        total.style.display = "none";
+        console.log("action");
+      });
       const cartItems = JSON.parse(localStorage.getItem("cartItems"));
       const cartItemsContainer = document.getElementById("cartItemsContainer");
       const numberProduct = JSON.parse(localStorage.getItem("numberProduct"));
@@ -254,6 +264,13 @@
   </body>
 </html>
 <style>
+  #total_followPayment {
+    display: block;
+    border-bottom: 1px solid var(--bg-btn);
+    border-radius: 15px 15px 0px 0px;
+    /* box-shadow: ; */
+    box-shadow: 2px 2px 12px 2px #dbd7d724;
+  }
   .orderId {
     border-radius: 10px;
   }
@@ -289,6 +306,16 @@
     border-radius: 50%;
     text-align: center;
     font-size: 14px;
+  }
+  .footer_orderId span {
+    font-weight: 300;
+    color: var(--second_color);
+    font-size: 13px;
+  }
+  .footer_orderId span small {
+    color: var(--black_color) !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
   }
   #cartItemsContainer {
     display: flex;
@@ -400,12 +427,12 @@
   .payment a i {
     margin: 0 10px;
   }
-  .total {
+  /* .total {
     border-bottom: 1px solid var(--bg-btn);
     border-radius: 15px 15px 0px 0px;
     /* box-shadow: ; */
-    box-shadow: 2px 2px 12px 2px #dbd7d724;
-  }
+  /* box-shadow: 2px 2px 12px 2px #dbd7d724; */
+  /* } */
   .total_price p:nth-child(2) span {
     color: #f79b36;
   }
