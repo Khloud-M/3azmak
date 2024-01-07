@@ -35,7 +35,7 @@
           حتى تتمكن من إرسال عزيمة دون تسجيل دخول، يرجى إدخال المعلومات التالية:
         </p>
         <form>
-          <div class="inner_wrap bg-white p-4">
+          <div class="inner_wrap bg-white p-4 my-2">
             <div class="name">
               <label for="name">الاسم :</label>
               <div class="container_input">
@@ -67,15 +67,19 @@
                 id="verificationCodeInput"
                 placeholder="رقم التحقق "
               />
-              <button id="verifyButton">Verify</button>
+              <!-- <button id="verifyButton">Verify</button> -->
             </div>
           </div>
           <input type="submit" id="submitButton" value="إرسال رمز التحقيق " />
-          <a href="home.html" target="_blank"> نيسبت </a>
+          <button class="global_btn m-auto" id="global_btn">
+            <a href="wayOfpayment.html" target="_blank" class="text-white">
+              متابعة الدفع
+            </a>
+          </button>
         </form>
       </div>
       <footer
-        class="bg-white mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
+        class="px-4 py-3 d-flex align-items-center justify-content-around"
       >
         <div class="mainHome d-flex flex-column align-items-center">
           <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
@@ -86,12 +90,6 @@
             <i class="fa-solid fa-cart-shopping"></i
           ></a>
           <a href="cart.html" target="_blank"> طلباتي</a>
-        </div>
-        <div class="elwlaa d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank">
-            <i class="fa-solid fa-gift"></i
-          ></a>
-          <a href="home.html" target="_blank"> الولاء</a>
         </div>
         <div class="myAccount d-flex flex-column align-items-center">
           <a href="myAccount.html" target="_blank">
@@ -105,6 +103,7 @@
 </html>
 <script>
   const submitButton = document.getElementById("submitButton");
+  const global_btn = document.getElementById("global_btn");
   const loadingContainer = document.getElementById("loadingContainer");
   const verificationContainer = document.getElementById(
     "verificationContainer"
@@ -112,7 +111,7 @@
   const verificationCodeInput = document.getElementById(
     "verificationCodeInput"
   );
-  const verifyButton = document.getElementById("verifyButton");
+  // const verifyButton = document.getElementById("verifyButton");
 
   submitButton.addEventListener("click", function (event) {
     event.preventDefault();
@@ -128,23 +127,32 @@
       // Show verification input
       verificationContainer.style.display = "block";
       verificationCodeInput.focus();
+      submitButton.style.display = "none";
+      global_btn.style.display = "block";
     }, 2000);
   });
 
-  verifyButton.addEventListener("click", function (event) {
-    event.preventDefault();
+  // verifyButton.addEventListener("click", function (event) {
+  // verifyButton.addEventListener("click", function (event) {
+  //   event.preventDefault();
 
-    const verificationCode = verificationCodeInput.value;
+  //   const verificationCode = verificationCodeInput.value;
 
-    // Perform verification logic
-    // ...
+  // Perform verification logic
+  // ...
 
-    // Clear input and hide verification container
-    verificationCodeInput.value = "";
-    verificationContainer.style.display = "none";
-  });
+  // Clear input and hide verification container
+  //   verificationCodeInput.value = "";
+  //   verificationContainer.style.display = "none";
+  // });
 </script>
 <style>
+  #submitButton {
+    display: block;
+  }
+  #global_btn {
+    display: none;
+  }
   #loadingContainer {
     justify-content: center;
   }
