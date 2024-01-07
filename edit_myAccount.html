@@ -28,10 +28,10 @@
         <a href="home.html" style="color: black">
           <i class="fa-solid fa-angle-right"></i>
         </a>
-        <h6>تعديل الحساب</h6>
+        <h5>تعديل الحساب</h5>
         <i class="fa-regular fa-bell"></i>
       </div>
-      <div class="edit_myAccount m-auto">
+      <div class="edit_myAccount my-4 mx-auto">
         <form>
           <div class="inner_form bg-white m-auto p-4">
             <div class="name">
@@ -85,7 +85,6 @@
             <div class="calneder">
               <label for="calneder"> تاريخ الميلاد:</label>
               <div class="container_input">
-                <!-- <i class="fa-regular fa-calendar-days"></i> -->
                 <input type="date" id="calneder" placeholder="تاريخ الميلاد " />
               </div>
             </div>
@@ -117,23 +116,17 @@
         </form>
       </div>
       <footer
-        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-between"
+        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-around"
       >
         <div class="mainHome d-flex flex-column align-items-center">
           <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
           <a href="home.html" target="_blank"> الرئيسية</a>
         </div>
         <div class="myorder d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank">
+          <a href="cart.html" target="_blank">
             <i class="fa-solid fa-cart-shopping"></i
           ></a>
           <a href="cart.html" target="_blank"> طلباتي</a>
-        </div>
-        <div class="elwlaa d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank">
-            <i class="fa-solid fa-gift"></i
-          ></a>
-          <a href="home.html" target="_blank"> الولاء</a>
         </div>
         <div class="myAccount d-flex flex-column align-items-center">
           <a href="myAccount.html" target="_blank">
@@ -149,7 +142,12 @@
   .edit_myAccount {
     width: 70%;
   }
+  @media (max-width: 768px) {
+    .edit_myAccount {
+      width: 90%;
+    }
+  }
   .inner_form {
-    border-radius: 7px;
+    border-radius: 10px;
   }
 </style>

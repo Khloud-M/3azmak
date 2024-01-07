@@ -71,7 +71,7 @@ a:hover {
        column-gap: 300px;
   height: 55px;
 }
-.header a i {
+.header i, .header a i {
   font-size: 20px;
 }
 .header h5 {

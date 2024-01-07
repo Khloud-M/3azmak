@@ -180,7 +180,7 @@ form input[type=radio]:checked {
   background-color: #F79B36;
 }
 
-form div label {
+form label {
   margin: 0 10px;
   font-size: 18px;
 }
