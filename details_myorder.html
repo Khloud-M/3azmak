@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل الطلب</title>
+    <!-- //font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //bootstrap -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <div class="mycontainer">
+      <div class="header d-flex align-items-center bg-white p-3">
+        <a href="home.html" style="color: black">
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <h5>تفاصيل الطلب</h5>
+      </div>
+      <div class="orderId bg-white mx-5 my-4 p-3">
+        <div
+          class="details_order d-flex align-items-center justify-content-between"
+        >
+          <h6 class="numberOrder">الطلب رقم 6546-A</h6>
+          <span class="time">
+            <i class="fa-regular fa-clock prv_order mx-1"></i> منذ ساعتين
+          </span>
+        </div>
+        <div class="details_restaurant my-2">
+          <img src="./image//logo.png" alt="logo" width="28" height="28" />
+          <small>برغر كينغ</small>
+          <div class="meals d-flex align-items-center my-1">
+            <div class="myMeal">
+              <img src="./image/cover1.jpg" />
+              <span class="amount_of_meals"> 3</span>
+            </div>
+            <div class="myMeal mx-2">
+              <img src="./image/cover1.jpg" />
+            </div>
+            <div class="myMeal">
+              <img src="./image/cover1.jpg" />
+              <span class="amount_of_meals"> 2</span>
+            </div>
+          </div>
+        </div>
+        <!-- Meals for each restaurant -->
+        <div class="details_restaurant my-2">
+          <img src="./image//logo.png" alt="logo" width="28" height="28" />
+          <small>Divine French Dining </small>
+          <div class="meals d-flex align-items-center my-1">
+            <div class="myMeal">
+              <img src="./image/cover1.jpg" />
+              <span class="amount_of_meals"> 3</span>
+            </div>
+            <div class="myMeal mx-2">
+              <img src="./image/cover1.jpg" />
+            </div>
+            <div class="myMeal">
+              <img src="./image/cover1.jpg" />
+              <span class="amount_of_meals"> 2</span>
+            </div>
+          </div>
+        </div>
+        <!-- Meals for each restaurant -->
+        <div
+          class="footer_orderId my-3 d-flex align-items-center justify-content-between"
+        >
+          <span class="price"
+            ><small class="font-weight-bold"> 45</small> ر.س</span
+          >
+          <div class="action_btn">
+            <button class="restrotion bg-white mx-2 px-3 py-2">
+              <i class="fa-solid fa-rotate-right"></i>
+              إعادة
+            </button>
+            <button class="global_btn">التفاصيل</button>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="mt-5 px-4 py-3 d-flex align-items-center justify-content-around"
+      >
+        <div class="mainHome d-flex flex-column align-items-center">
+          <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
+          <a href="home.html" target="_blank"> الرئيسية</a>
+        </div>
+        <div class="myorder d-flex flex-column align-items-center">
+          <a href="cart.html" target="_blank">
+            <i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="cart.html" target="_blank"> طلباتي</a>
+        </div>
+        <div class="myAccount d-flex flex-column align-items-center">
+          <a href="myAccount.html" target="_blank">
+            <i class="fa-solid fa-user"></i
+          ></a>
+          <a href="myAccount.html" target="_blank"> حسابي</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<style>
+  .orderId {
+    border-radius: 10px;
+  }
+  .orderId .time,
+  .orderId .time i {
+    color: var(--second_color);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .myMeal {
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  .myMeal img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    /* position: relative; */
+  }
+  .myMeal .amount_of_meals {
+    background-color: var(--black_color);
+    color: white;
+    position: absolute;
+    content: "";
+    right: -3px;
+    bottom: -3px;
+    z-index: 999;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+  }
+</style>
