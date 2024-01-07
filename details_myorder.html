@@ -38,7 +38,7 @@
           </h6>
         </div>
         <div class="details_restaurant my-2 d-flex gap-2">
-          <div class="name_restaurat my-2">
+          <div class="name_restaurat my-2 d-flex">
             <img src="./image//logo.png" alt="logo" width="28" height="28" />
             <small>برغر كينغ</small>
           </div>
@@ -48,6 +48,9 @@
               <div>
                 <h6 class="d-inline-block">اسم الوجبة</h6>
                 <span> x3</span>
+                <span class="price d-block"
+                  ><small class="font-weight-bold"> 45</small> ر.س</span
+                >
               </div>
             </div>
             <div class="myMeal d-flex gap-2 w-100">
@@ -55,6 +58,9 @@
               <div>
                 <h6 class="d-inline-block">اسم الوجبة</h6>
                 <span> x3</span>
+                <span class="price d-block"
+                  ><small class="font-weight-bold"> 45</small> ر.س</span
+                >
               </div>
             </div>
             <div class="myMeal d-flex gap-2 w-100">
@@ -62,46 +68,15 @@
               <div>
                 <h6 class="d-inline-block">اسم الوجبة</h6>
                 <span> x3</span>
+                <span class="price d-block"
+                  ><small class="font-weight-bold"> 45</small> ر.س</span
+                >
               </div>
             </div>
           </div>
         </div>
         <!-- Meals for each restaurant -->
-        <div class="details_restaurant my-2">
-          <img src="./image//logo.png" alt="logo" width="28" height="28" />
-          <small>Divine French Dining </small>
-          <div class="meals d-flex align-items-center my-1">
-            <div class="myMeal d-flex">
-              <img src="./image/cover1.jpg" />
-              <div>
-                <h6 class="d-inline-block">اسم الوجبة</h6>
-                <span> x3</span>
-              </div>
-            </div>
-            <div class="myMeal mx-2">
-              <img src="./image/cover1.jpg" />
-            </div>
-            <div class="myMeal">
-              <img src="./image/cover1.jpg" />
-              <span class="amount_of_meals"> 2</span>
-            </div>
-          </div>
-        </div>
         <!-- Meals for each restaurant -->
-        <div
-          class="footer_orderId my-3 d-flex align-items-center justify-content-between"
-        >
-          <span class="price"
-            ><small class="font-weight-bold"> 45</small> ر.س</span
-          >
-          <div class="action_btn">
-            <button class="restrotion bg-white mx-2 px-3 py-2">
-              <i class="fa-solid fa-rotate-right"></i>
-              إعادة
-            </button>
-            <button class="global_btn">التفاصيل</button>
-          </div>
-        </div>
       </div>
       <footer
         class="mt-5 px-4 py-3 d-flex align-items-center justify-content-around"
@@ -148,5 +123,19 @@
   }
   .myMeal span {
     color: var(--main_color);
+  }
+  .price {
+    font-weight: 300;
+    color: var(--second_color) !important;
+    font-size: 13px;
+  }
+  .price small {
+    color: var(--black_color) !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+  }
+  .name_restaurat small {
+    display: inline-block;
+    width: 70px;
   }
 </style>
