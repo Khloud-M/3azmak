@@ -75,7 +75,7 @@
             </div> -->
             <div calss="cartItemsContainer" class="p-5 m-auto">
               <div class="wrapper-class">
-                <p>عدد عناصر السلة :(1)</p>
+                <p>عدد عناصر السلة :(2)</p>
                 <div>
                   <i class="fa-solid fa-trash-can"></i>
                   <span> افراغ السلة</span>
@@ -85,7 +85,73 @@
                 <div class="image">
                   <img src="./image/cover1.jpg" alt="" />
                 </div>
-                <div class="details"></div>
+                <div class="details">
+                  <h6>اسم الوجبة</h6>
+                  <img
+                    src="./image//logo.png"
+                    alt="logo"
+                    width="22"
+                    height="22"
+                  />
+                  <small>برغر كينغ</small>
+                  <p class="my-1">
+                    وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
+                    الوجبة هنا وصف قصير عن الوجبة هنا
+                  </p>
+                  <div
+                    class="action d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <del>60</del>
+                      <span>45.5</span>
+                      <small> ر.س</small>
+                    </div>
+                    <div
+                      class="action_operation d-flex align-items-center justify-content-between"
+                    >
+                      <button class="border-0">+</button>
+                      <span class="text-dark"> 1 </span>
+                      <button class="border-0">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="image">
+                  <img src="./image/cover1.jpg" alt="" />
+                </div>
+                <div class="details">
+                  <h6>اسم الوجبة</h6>
+                  <img
+                    src="./image//logo.png"
+                    alt="logo"
+                    width="22"
+                    height="22"
+                  />
+                  <small>برغر كينغ</small>
+                  <p class="my-1">
+                    وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
+                    الوجبة هنا وصف قصير عن الوجبة هنا
+                  </p>
+                  <div
+                    class="action d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <del>60</del>
+                      <span>45.5</span>
+                      <small> ر.س</small>
+                    </div>
+                    <div
+                      class="action_operation d-flex align-items-center justify-content-between"
+                    >
+                      <button class="border-0">+</button>
+                      <span class="text-dark"> 2 </span>
+                      <button class="border-0">-</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -286,6 +352,17 @@
   </body>
 </html>
 <style>
+  .action_operation {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100px;
+  }
+  .action_operation button {
+    color: var(--main_color);
+    background: none;
+  }
+
   #total_followPayment {
     display: block;
     border-bottom: 1px solid var(--bg-btn);
@@ -345,6 +422,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .details p,
+  small {
+    color: var(--second_color) !important;
+    font-size: 13px;
+  }
+  .details del {
+    color: var(--second_color) !important;
+  }
+  .details .action span {
+    color: var(--main_color);
+    font-weight: 700;
   }
   #cartItemsContainer i {
     font-size: 48px;
@@ -412,7 +501,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: space-between; */
     column-gap: 30px;
     margin: 15px 0;
