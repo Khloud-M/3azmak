@@ -30,7 +30,7 @@
         <i class="fa-regular fa-bell"></i>
       </div>
       <!-- <img src="./image//cartempty.jpg" -->
-      <div class="teeeeest m-5">
+      <div class="teeeeest my-5 mx-3">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
@@ -73,7 +73,7 @@
             <!-- <div id="cartItemsContainer" class="p-5 m-auto">
               <div class="product-num"></div>
             </div> -->
-            <div calss="cartItemsContainer" class="p-5 m-auto">
+            <div calss="cartItemsContainer" class="m-auto">
               <div class="wrapper-class">
                 <p>عدد عناصر السلة :(2)</p>
                 <div>
@@ -496,16 +496,22 @@
     margin: 0 10px;
   }
   .cart-item {
-    width: 100%;
     background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: space-between; */
     column-gap: 30px;
     margin: 15px 0;
     padding: 15px;
+  }
+  @media (max-width: 768px) {
+    .cart-item .image {
+      width: 250px !important;
+      height: 200px !important;
+    }
+    .cart-item p {
+      color: 12px !important;
+    }
   }
   .cart-item .image {
     width: 120px;
