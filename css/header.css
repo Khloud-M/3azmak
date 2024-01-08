@@ -26,6 +26,18 @@ header .info ul li {
   cursor: pointer;
 }
 
+@media (min-width: 769px) and (max-width: 1200px) {
+  header .info ul {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: center;
+  }
+  header .info ul li {
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
 .mobile_screen .container_ifno {
   width: 100%;
 }

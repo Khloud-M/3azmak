@@ -192,6 +192,7 @@ input[type="checkbox"] {
     width: 100% !important;
     padding: 0;
     margin: auto;
+    // background-color: red;
   }
   ::placeholder{
     font-size: 10px;
@@ -199,6 +200,7 @@ input[type="checkbox"] {
 }
 @media(min-width:769px ) and (max-width:1200px) {
   .mycontainer{
+    // background-color: blue;
     width: 98% !important;
     overflow: hidden;
     padding: 0;

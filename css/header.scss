@@ -25,6 +25,23 @@ header{
         }
     }
 }
+@media(min-width:769px ) and (max-width:1200px) {
+    header{
+        .info{
+            // background-color: green;
+            ul {
+                column-gap: 10px;
+                justify-content: center;
+                li{
+                    list-style: none;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+         
+    }
+}
 // mobile screen 
 .mobile_screen{
     .container_ifno{
