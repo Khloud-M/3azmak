@@ -26,7 +26,7 @@ header .info ul li {
   cursor: pointer;
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) {
   header .info ul {
     -moz-column-gap: 10px;
          column-gap: 10px;
@@ -34,7 +34,7 @@ header .info ul li {
   }
   header .info ul li {
     list-style: none;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
   }
 }

@@ -25,7 +25,7 @@ header{
         }
     }
 }
-@media(min-width:769px ) and (max-width:1200px) {
+@media(min-width:769px ) {
     header{
         .info{
             // background-color: green;
@@ -34,7 +34,7 @@ header{
                 justify-content: center;
                 li{
                     list-style: none;
-                    font-size: 14px;
+                    font-size: 12px;
                     cursor: pointer;
                 }
             }
