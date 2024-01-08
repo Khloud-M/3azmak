@@ -123,7 +123,7 @@
         </div>
       </header>
       <div class="myinfo bg-white p-5 text-center">
-        <img src="./image/Qr.jpg" alt="QR" />
+        <img src="./image/Qr.jpg" alt="QR" class="d-block m-auto" />
         <h5 class="name my-3">فهد العامري</h5>
         <div class="email">
           <i class="fa-regular fa-envelope"></i>
@@ -198,5 +198,10 @@
   }
   .myinfo div {
     margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .myinfo img {
+      width: 100%;
+    }
   }
 </style>
