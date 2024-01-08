@@ -239,4 +239,21 @@ form label {
      object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--main_color);
+}
+
+.search_meal {
+  border-radius: 10px;
+  color: var(--bg-btn);
+}
+.search_meal ::-moz-placeholder {
+  font-weight: 300;
+}
+.search_meal ::placeholder {
+  font-weight: 300;
+}
+.search_meal input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
 }/*# sourceMappingURL=home.css.map */

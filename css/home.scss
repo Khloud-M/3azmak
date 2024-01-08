@@ -245,3 +245,17 @@ form {
         
           }
 }
+// search meal or restaurent
+.search_meal {
+    border-radius: 10px;
+    color: var(--bg-btn);
+    ::placeholder {
+        font-weight: 300;
+      }
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+      }
+  }
