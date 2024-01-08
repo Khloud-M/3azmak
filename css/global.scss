@@ -5,9 +5,6 @@
     --bg-color:#E6EAEE;
     --transtion:0.3s;
     --bg-btn:#CACACA;
-    // background: #F8F8F8;
-
-
   }
 *{
     box-sizing: border-box;
@@ -60,7 +57,6 @@ body {
   margin: auto;
   background: #F8F8F8;
   padding: 0;
-  // min-height: 90vh;
 } 
 a{
   text-decoration: none;
@@ -69,9 +65,6 @@ a{
     color: #303030;
   }
        
-}
- .inner_wrap{
-  border-radius: 10px;
 }
 .header{
   column-gap: 300px;
@@ -90,7 +83,6 @@ a{
   }
 }
 input[type="submit"]{
-  // background: transparent;
   background: #F79B36;
   border: none;
   color: white;
@@ -145,13 +137,8 @@ input[type="submit"]{
       border: 2px solid hsl(0, 0%, 83%);
       outline: none;
     }
-
-    /* Style the checked radio button */
     input[type="radio"]:checked {
       border: 2px solid hsl(0, 0%, 83%);
-      // border: 2px solid #F79B36;
-      
-      // border-color: white;
       background-color: #F79B36;
      
     }
@@ -192,7 +179,6 @@ input[type="checkbox"] {
     width: 100% !important;
     padding: 0;
     margin: auto;
-    // background-color: red;
   }
   ::placeholder{
     font-size: 10px;
@@ -200,7 +186,6 @@ input[type="checkbox"] {
 }
 @media(min-width:769px ) and (max-width:1200px) {
   .mycontainer{
-    // background-color: blue;
     width: 98% !important;
     overflow: hidden;
     padding: 0;

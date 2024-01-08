@@ -79,10 +79,6 @@ a:hover {
   color: #303030;
 }
 
-.inner_wrap {
-  border-radius: 10px;
-}
-
 .header {
   -moz-column-gap: 300px;
        column-gap: 300px;
@@ -135,7 +131,6 @@ input[type=submit]:active {
   border-radius: 5px;
   padding: 7px;
   margin: 15px 0;
-  /* Style the checked radio button */
 }
 .contact_us .container_input input, .contact_us .container_input textarea, .contact_us .container_input select, .contact_us #verificationContainer input, .contact_us #verificationContainer textarea, .contact_us #verificationContainer select, .join_us .container_input input, .join_us .container_input textarea, .join_us .container_input select, .join_us #verificationContainer input, .join_us #verificationContainer textarea, .join_us #verificationContainer select, .edit_myAccount .container_input input, .edit_myAccount .container_input textarea, .edit_myAccount .container_input select, .edit_myAccount #verificationContainer input, .edit_myAccount #verificationContainer textarea, .edit_myAccount #verificationContainer select {
   margin: 0 10px;
