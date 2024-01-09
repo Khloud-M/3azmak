@@ -56,6 +56,12 @@
                 />
               </div>
             </div>
+            <div class="notes mx-2 p-1 mb-3">
+              <ul class="mx-4">
+                <li class="my-1">رقم الهاتف لايظهر للمستلم</li>
+                <li>سيتم إرسال رمز تحقق لرقم الهاتف</li>
+              </ul>
+            </div>
             <div id="loadingContainer" style="display: none">
               <div id="loadingAnimation" class="loading-animation"></div>
               <div id="loadingAnimation" class="loading-animation"></div>
@@ -70,7 +76,6 @@
               />
               <!-- <button id="verifyButton">Verify</button> -->
             </div>
-            
           </div>
           <input type="submit" id="submitButton" value="إرسال رمز التحقيق " />
           <button class="global_btn m-auto" id="global_btn">
@@ -84,20 +89,16 @@
         class="px-4 py-3 d-flex align-items-center justify-content-around"
       >
         <div class="mainHome d-flex flex-column align-items-center">
-          <a href="home.html" target="_blank"> <i class="fa fa-house"></i></a>
-          <a href="home.html" target="_blank"> الرئيسية</a>
+          <a href="home.html"> <i class="fa fa-house"></i></a>
+          <a href="home.html"> الرئيسية</a>
         </div>
         <div class="myorder d-flex flex-column align-items-center">
-          <a href="cart.html" target="_blank">
-            <i class="fa-solid fa-cart-shopping"></i
-          ></a>
-          <a href="cart.html" target="_blank"> طلباتي</a>
+          <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="cart.html"> طلباتي</a>
         </div>
         <div class="myAccount d-flex flex-column align-items-center">
-          <a href="myAccount.html" target="_blank">
-            <i class="fa-solid fa-user"></i
-          ></a>
-          <a href="myAccount.html" target="_blank"> حسابي</a>
+          <a href="myAccount.html"> <i class="fa-solid fa-user"></i></a>
+          <a href="myAccount.html"> حسابي</a>
         </div>
       </footer>
     </div>
@@ -135,10 +136,18 @@
   });
 </script>
 <style>
+  .notes {
+    background: #f79b361a;
+    border-radius: 7px;
+  }
   @media (max-width: 768px) {
     p,
     label {
       font-size: 12px;
+      font-weight: 400;
+    }
+    .notes ul li {
+      font-size: 10px;
       font-weight: 400;
     }
   }
