@@ -1,4 +1,3 @@
-
 :root {
   --main_color:#F79B36;
   --second_color:#989898;
@@ -123,6 +122,11 @@ input[type=submit]:active {
   input[type=submit] {
     font-size: 14px;
     font-weight: 400;
+  }
+  .global_btn a, .restrotion, .global_btn {
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 5px;
   }
 }
 .contact_us form, .join_us form, .edit_myAccount form {

@@ -234,14 +234,14 @@
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
           >
-            <div class="orderId bg-white mx-5 my-4 p-3">
+            <div class="orderId mx-3 my-4 p-3 bg-white">
               <div
                 class="details_order d-flex align-items-center justify-content-between"
               >
                 <h6 class="numberOrder">الطلب رقم 6546-A</h6>
-                <span class="time">
+                <h6 class="time">
                   <i class="fa-regular fa-clock prv_order mx-1"></i> منذ ساعتين
-                </span>
+                </h6>
               </div>
               <div class="details_restaurant my-2">
                 <img
@@ -296,7 +296,7 @@
                   ><small class="font-weight-bold"> 45</small> ر.س</span
                 >
                 <div class="action_btn">
-                  <button class="restrotion bg-white mx-2 px-3 py-2">
+                  <button class="restrotion bg-white mx-1 px-2 py-2">
                     <i class="fa-solid fa-rotate-right"></i>
                     إعادة
                   </button>
@@ -514,6 +514,11 @@
     .details .action span {
       font-weight: 500;
       font-size: 14px !important;
+    }
+    .numberOrder,
+    .orderId .time {
+      font-size: 12px;
+      font-weight: 400;
     }
   }
   .cart-item .image {
