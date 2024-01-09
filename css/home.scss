@@ -48,7 +48,9 @@
     .image{
         width: 100%;
         overflow: hidden;
-        height: 250px;
+        height: 220px;
+        object-fit: cover;
+
         img{
             width: 100%;
             object-fit: cover;
