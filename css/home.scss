@@ -48,10 +48,12 @@
     .image{
         width: 100%;
         overflow: hidden;
+        height: 250px;
         img{
             width: 100%;
             object-fit: cover;
             overflow: hidden;
+            border-radius: 10px;
         }
     }
 }
@@ -152,7 +154,7 @@
     }
     .list_Galler{
     .image{
-        height: 160px;
+        height: 160px !important;
         img{
             height: 100%;
             border-radius: 15px;
@@ -259,3 +261,11 @@ form {
         padding: 0 10px;
       }
   }
+//   .carousel-inner{
+//     background-color: red;
+//     height: 300px;
+//     img{
+//         object-fit: cover;
+//     }
+//   }
+

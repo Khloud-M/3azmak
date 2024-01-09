@@ -52,6 +52,7 @@
 .list_Gallery .image {
   width: 100%;
   overflow: hidden;
+  height: 250px;
 }
 .list_Galler .image img,
 .list_Gallery .image img {
@@ -59,6 +60,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .list,
@@ -155,7 +157,7 @@
     font-size: 16px;
   }
   .list_Galler .image {
-    height: 160px;
+    height: 160px !important;
   }
   .list_Galler .image img {
     height: 100%;
