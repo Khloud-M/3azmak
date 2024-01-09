@@ -120,20 +120,19 @@
     width: 50%;
   }
   .content_list h3 {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   .content_list p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .content_list .more_details .action i {
-    width: 40px !important;
-    height: 40px !important;
-    line-height: 20px;
+    width: 34px !important;
+    height: 34px !important;
+    line-height: 12px;
     margin-top: 10px;
   }
   .content_list .more_details .price span {
-    font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
   }
   .list_Galler .image {
     height: 160px !important;
