@@ -19,7 +19,7 @@ header{
             justify-content: center;
             li{
                 list-style: none;
-                font-size: 15px;
+                font-size: 14px;
                 cursor: pointer;
             }
         }
@@ -35,6 +35,25 @@ header{
                 li{
                     list-style: none;
                     font-size: 12px;
+                    cursor: pointer;
+                }
+            }
+        }
+         
+    }
+}
+@media(min-width:1200px) and (max-width:1440px)  {
+
+    header{
+        // background-color: red !important;
+        .info{
+            // background-color: green;
+            ul {
+                column-gap: 10px;
+                justify-content: center;
+                li{
+                    list-style: none;
+                    font-size: 8px !important;
                     cursor: pointer;
                 }
             }

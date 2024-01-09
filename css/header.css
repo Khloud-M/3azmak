@@ -22,7 +22,7 @@ header .info ul {
 }
 header .info ul li {
   list-style: none;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -35,6 +35,18 @@ header .info ul li {
   header .info ul li {
     list-style: none;
     font-size: 12px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header .info ul {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: center;
+  }
+  header .info ul li {
+    list-style: none;
+    font-size: 8px !important;
     cursor: pointer;
   }
 }
