@@ -133,7 +133,12 @@
                     />
                     <label for="add33"> قرص لحم عجل إضافي</label>
                   </div>
-                  <span> 10 +</span>
+                  <div>
+                    <button class="border-0 p-1" id="increaseBtn">+</button>
+                    <span id="count" class="mx-1">1</span>
+                    <button class="border-0 p-1" id="decreaseBtn">-</button>
+                    <span> 10</span>
+                  </div>
                 </div>
                 <div
                   class="d-flex justify-content-between align-items-center my-3"
@@ -147,7 +152,12 @@
                     />
                     <label for="add3"> صوص إضافي</label>
                   </div>
-                  <span> 10 +</span>
+                  <div>
+                    <button class="border-0 p-1" id="increaseBtn">+</button>
+                    <span id="count" class="mx-1">1</span>
+                    <button class="border-0 p-1" id="decreaseBtn">-</button>
+                    <span> 10</span>
+                  </div>
                 </div>
                 <div
                   class="d-flex justify-content-between align-items-center my-3"
@@ -161,7 +171,12 @@
                     />
                     <label for="add4"> خبز إضافي</label>
                   </div>
-                  <span> 10 +</span>
+                  <div>
+                    <button class="border-0 p-1" id="increaseBtn">+</button>
+                    <span id="count" class="mx-1">1</span>
+                    <button class="border-0 p-1" id="decreaseBtn">-</button>
+                    <span> 10</span>
+                  </div>
                 </div>
               </div>
               <!-- end choose Add-ons -->
@@ -383,7 +398,8 @@
     border-radius: 0px 0 15px 15px;
   }
 
-  .addition button {
+  .addition button,
+  form button {
     background: #fdb96f;
     border-radius: 5px;
     width: 25px;
@@ -394,6 +410,10 @@
   .addition button:active,
   .addition button:focus {
     background: white;
+  }
+  form button:active,
+  form button:focus {
+    color: white;
   }
 
   .share_icon button {
