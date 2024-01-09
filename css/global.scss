@@ -77,9 +77,16 @@ a{
     color: var(--black_color);
   }
 }
+
 @media(max-width:768px) {
-   .header{
-    column-gap: 120px ; 
+  .header{
+  column-gap: 120px;
+
+  }
+   header{
+    h5{
+      font-size: 14px;
+    }
   }
 }
 input[type="submit"]{
@@ -99,6 +106,12 @@ input[type="submit"]{
     
   }
 
+}
+@media (max-width: 768px) {
+  input[type="submit"]{
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 .contact_us , .join_us , .edit_myAccount{
   form {

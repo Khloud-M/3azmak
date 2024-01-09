@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>معلومات مرسل العزيمة</title>
     <!-- //font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Gulzar&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
     <!-- //bootstrap -->
@@ -21,19 +23,18 @@
   </head>
   <body>
     <div class="mycontainer">
-      <div class="header d-flex align-items-center bg-white p-3">
+      <header
+        class="d-flex align-items-center bg-white p-3 justify-content-between"
+      >
         <a href="home.html" style="color: black">
           <i class="fa-solid fa-angle-right"></i>
         </a>
-        <h6>معلومات مرسل العزيمة</h6>
-      </div>
+        <h5>معلومات مرسل العزيمة</h5>
+        <i class="fa-regular fa-bell"></i>
+      </header>
 
-      <div
-        class="join_us d-flex flex-column align-items-center px-5 m-5 justify-content-center"
-      >
-        <p>
-          حتى تتمكن من إرسال عزيمة دون تسجيل دخول، يرجى إدخال المعلومات التالية:
-        </p>
+      <div class="join_us px-5 my-5 mx-2">
+        <p>حتى تتمكن من إرسال عزيمة، يرجى إدخال المعلومات التالية:</p>
         <form>
           <div class="inner_wrap bg-white p-4 my-2">
             <div class="name">
@@ -133,6 +134,13 @@
   });
 </script>
 <style>
+  @media (max-width: 768px) {
+    p,
+    label {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
   .inner_wrap {
     border-radius: 10px;
   }
