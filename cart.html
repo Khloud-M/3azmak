@@ -19,16 +19,90 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- style sheet -->
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
   </head>
   <body>
     <div class="mycontainer">
-      <div class="header d-flex align-items-center bg-white p-3">
-        <a href="home.html" style="color: black">
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-        <h6>طلباتي</h6>
-        <i class="fa-regular fa-bell"></i>
-      </div>
+      <header
+        class="bg-white mb-4 p-3 d-flex align-items-center justify-content-between"
+      >
+        <!-- show mobile -->
+        <div class="mobile_screen">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="container_ifno">
+                <div class="image">
+                  <img src="./image/3azmak.png" alt="3azmak_title" />
+                </div>
+                <h2 class="name">فهد الغامري</h2>
+                <ul class="p-0">
+                  <hr />
+                  <li class="my-2">
+                    <i class="fa-solid fa-globe mx-2"></i> تغيير اللغة
+                  </li>
+                  <hr />
+                  <li class="my-2">
+                    <i class="fa-solid fa-gear mx-2"></i> الإعدادت
+                  </li>
+                  <hr />
+                  <li class="my-2">
+                    <a href="Terms&Conditions.html" target="_blank">
+                      <i class="fa-solid fa-file-contract mx-2"></i> الشروط
+                      والأحكام</a
+                    >
+                  </li>
+                  <hr />
+                  <li class="my-2">
+                    <a href="contactUS.html" target="_blank">
+                      <i class="fa-solid fa-envelope mx-2"></i> تواصل معنا</a
+                    >
+                  </li>
+                  <hr />
+                  <li class="my-2">
+                    <a href="aboutApp.html" target="_blank">
+                      <i class="fa-solid fa-circle-exclamation mx-2"></i> حول
+                      التطبيق</a
+                    >
+                  </li>
+                  <hr />
+                </ul>
+                <button class="joinUs_btn py-3 px-1">
+                  <a href="joinUs.html" target="_blank">
+                    <i class="fa-regular fa-star mx-1"></i> انضم إلينا</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5>طلباتي</h5>
+        <div class="icons">
+          <i class="fa-regular fa-bell mx-3"></i>
+        </div>
+      </header>
       <!-- <img src="./image//cartempty.jpg" -->
       <div class="teeeeest my-5 mx-3">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -430,7 +504,15 @@
       width: 50% !important;
     }
     .cart-item p {
-      color: 12px !important;
+      color: 10px !important;
+    }
+    .details h6 {
+      font-size: 12px !important;
+      font-weight: 400;
+    }
+    .details .action span {
+      font-weight: 500;
+      font-size: 14px !important;
     }
   }
   .cart-item .image {
@@ -447,8 +529,6 @@
     background: #f79b36;
     border: none;
     color: white;
-    /* margin: 30px auto; */
-    /* text-align: center; */
     min-width: 110px;
     /* display: block; */
     padding: 8px 15px;
