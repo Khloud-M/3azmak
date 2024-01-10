@@ -104,213 +104,216 @@
         </div>
       </header>
       <!-- <img src="./image//cartempty.jpg" -->
-      <div class="teeeeest my-5 mx-3">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
+      <main>
+        <div class="teeeeest my-5 mx-3">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                السلة
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                <i class="fa-regular fa-clock prv_order"></i>
+                طلباتي السابقة
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
             >
-              <i class="fa-solid fa-cart-shopping"></i>
-              السلة
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              <i class="fa-regular fa-clock prv_order"></i>
-              طلباتي السابقة
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-          >
-            <!-- <div id="cartItemsContainer" class="p-5 m-auto">
+              <!-- <div id="cartItemsContainer" class="p-5 m-auto">
             </div> -->
-            <div calss="cartItemsContainer" class="m-auto">
-              <div class="wrapper-class">
-                <p>عدد عناصر السلة :(2)</p>
-                <div>
-                  <i class="fa-solid fa-trash-can"></i>
-                  <span> افراغ السلة</span>
+              <div calss="cartItemsContainer" class="m-auto">
+                <div class="wrapper-class">
+                  <p>عدد عناصر السلة :(2)</p>
+                  <div>
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span> افراغ السلة</span>
+                  </div>
                 </div>
-              </div>
-              <div class="cart-item">
-                <div class="image">
-                  <img src="./image/cover1.jpg" alt="" />
-                </div>
-                <div class="details">
-                  <h6>اسم الوجبة</h6>
-                  <img
-                    src="./image//logo.png"
-                    alt="logo"
-                    width="22"
-                    height="22"
-                  />
-                  <small>برغر كينغ</small>
-                  <p class="my-1">
-                    وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
-                    الوجبة هنا وصف قصير عن الوجبة هنا
-                  </p>
-                  <div
-                    class="action d-flex align-items-center justify-content-between"
-                  >
-                    <div>
-                      <del>60</del>
-                      <span>45.5</span>
-                      <small> ر.س</small>
-                    </div>
+                <div class="cart-item">
+                  <div class="image">
+                    <img src="./image/cover1.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <h6>اسم الوجبة</h6>
+                    <img
+                      src="./image//logo.png"
+                      alt="logo"
+                      width="22"
+                      height="22"
+                    />
+                    <small>برغر كينغ</small>
+                    <p class="my-1">
+                      وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
+                      الوجبة هنا وصف قصير عن الوجبة هنا
+                    </p>
                     <div
-                      class="action_operation d-flex align-items-center justify-content-between"
+                      class="action d-flex align-items-center justify-content-between"
                     >
-                      <button class="border-0">+</button>
-                      <span class="text-dark"> 1 </span>
-                      <button class="border-0">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                      <div>
+                        <del>60</del>
+                        <span>45.5</span>
+                        <small> ر.س</small>
+                      </div>
+                      <div
+                        class="action_operation d-flex align-items-center justify-content-between"
+                      >
+                        <button class="border-0">+</button>
+                        <span class="text-dark"> 1 </span>
+                        <button class="border-0">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="cart-item">
-                <div class="image">
-                  <img src="./image/cover1.jpg" alt="" />
-                </div>
-                <div class="details">
-                  <h6>اسم الوجبة</h6>
-                  <img
-                    src="./image//logo.png"
-                    alt="logo"
-                    width="22"
-                    height="22"
-                  />
-                  <small>برغر كينغ</small>
-                  <p class="my-1">
-                    وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
-                    الوجبة هنا وصف قصير عن الوجبة هنا
-                  </p>
-                  <div
-                    class="action d-flex align-items-center justify-content-between"
-                  >
-                    <div>
-                      <del>60</del>
-                      <span>45.5</span>
-                      <small> ر.س</small>
-                    </div>
+                <div class="cart-item">
+                  <div class="image">
+                    <img src="./image/cover1.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <h6>اسم الوجبة</h6>
+                    <img
+                      src="./image//logo.png"
+                      alt="logo"
+                      width="22"
+                      height="22"
+                    />
+                    <small>برغر كينغ</small>
+                    <p class="my-1">
+                      وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
+                      الوجبة هنا وصف قصير عن الوجبة هنا
+                    </p>
                     <div
-                      class="action_operation d-flex align-items-center justify-content-between"
+                      class="action d-flex align-items-center justify-content-between"
                     >
-                      <button class="border-0">+</button>
-                      <span class="text-dark"> 2 </span>
-                      <button class="border-0">-</button>
+                      <div>
+                        <del>60</del>
+                        <span>45.5</span>
+                        <small> ر.س</small>
+                      </div>
+                      <div
+                        class="action_operation d-flex align-items-center justify-content-between"
+                      >
+                        <button class="border-0">+</button>
+                        <span class="text-dark"> 2 </span>
+                        <button class="border-0">-</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-          >
-            <div class="orderId mx-3 my-4 p-3 bg-white">
-              <div
-                class="details_order d-flex align-items-center justify-content-between"
-              >
-                <h6 class="numberOrder">الطلب رقم 6546-A</h6>
-                <h6 class="time">
-                  <i class="fa-regular fa-clock prv_order mx-1"></i> منذ ساعتين
-                </h6>
-              </div>
-              <div class="details_restaurant my-2">
-                <img
-                  src="./image//logo.png"
-                  alt="logo"
-                  width="28"
-                  height="28"
-                />
-                <small>برغر كينغ</small>
-                <div class="meals d-flex align-items-center my-1">
-                  <div class="myMeal">
-                    <img src="./image/cover1.jpg" />
-                    <span class="amount_of_meals"> 3</span>
-                  </div>
-                  <div class="myMeal mx-2">
-                    <img src="./image/cover1.jpg" />
-                  </div>
-                  <div class="myMeal">
-                    <img src="./image/cover1.jpg" />
-                    <span class="amount_of_meals"> 2</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Meals for each restaurant -->
-              <div class="details_restaurant my-2">
-                <img
-                  src="./image//logo.png"
-                  alt="logo"
-                  width="28"
-                  height="28"
-                />
-                <small>Divine French Dining </small>
-                <div class="meals d-flex align-items-center my-1">
-                  <div class="myMeal">
-                    <img src="./image/cover1.jpg" />
-                    <span class="amount_of_meals"> 3</span>
-                  </div>
-                  <div class="myMeal mx-2">
-                    <img src="./image/cover1.jpg" />
-                  </div>
-                  <div class="myMeal">
-                    <img src="./image/cover1.jpg" />
-                    <span class="amount_of_meals"> 2</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Meals for each restaurant -->
-              <div
-                class="footer_orderId my-3 d-flex align-items-center justify-content-between"
-              >
-                <span class="price"
-                  ><small class="font-weight-bold"> 45</small> ر.س</span
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="orderId mx-3 my-4 p-3 bg-white">
+                <div
+                  class="details_order d-flex align-items-center justify-content-between"
                 >
-                <div class="action_btn">
-                  <button class="restrotion bg-white mx-1 px-2 py-2">
-                    <i class="fa-solid fa-rotate-right"></i>
-                    إعادة
-                  </button>
-                  <button class="global_btn">
-                    <a href="details_myorder.html" class="text-white">
-                      التفاصيل</a
-                    >
-                  </button>
+                  <h6 class="numberOrder">الطلب رقم 6546-A</h6>
+                  <h6 class="time">
+                    <i class="fa-regular fa-clock prv_order mx-1"></i> منذ
+                    ساعتين
+                  </h6>
+                </div>
+                <div class="details_restaurant my-2">
+                  <img
+                    src="./image//logo.png"
+                    alt="logo"
+                    width="28"
+                    height="28"
+                  />
+                  <small>برغر كينغ</small>
+                  <div class="meals d-flex align-items-center my-1">
+                    <div class="myMeal">
+                      <img src="./image/cover1.jpg" />
+                      <span class="amount_of_meals"> 3</span>
+                    </div>
+                    <div class="myMeal mx-2">
+                      <img src="./image/cover1.jpg" />
+                    </div>
+                    <div class="myMeal">
+                      <img src="./image/cover1.jpg" />
+                      <span class="amount_of_meals"> 2</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Meals for each restaurant -->
+                <div class="details_restaurant my-2">
+                  <img
+                    src="./image//logo.png"
+                    alt="logo"
+                    width="28"
+                    height="28"
+                  />
+                  <small>Divine French Dining </small>
+                  <div class="meals d-flex align-items-center my-1">
+                    <div class="myMeal">
+                      <img src="./image/cover1.jpg" />
+                      <span class="amount_of_meals"> 3</span>
+                    </div>
+                    <div class="myMeal mx-2">
+                      <img src="./image/cover1.jpg" />
+                    </div>
+                    <div class="myMeal">
+                      <img src="./image/cover1.jpg" />
+                      <span class="amount_of_meals"> 2</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Meals for each restaurant -->
+                <div
+                  class="footer_orderId my-3 d-flex align-items-center justify-content-between"
+                >
+                  <span class="price"
+                    ><small class="font-weight-bold"> 45</small> ر.س</span
+                  >
+                  <div class="action_btn">
+                    <button class="restrotion bg-white mx-1 px-2 py-2">
+                      <i class="fa-solid fa-rotate-right"></i>
+                      إعادة
+                    </button>
+                    <button class="global_btn">
+                      <a href="details_myorder.html" class="text-white">
+                        التفاصيل</a
+                      >
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <div class="total bg-white p-4" id="total_followPayment">
         <div class="d-flex align-items-center justify-content-between w-100">
           <div class="total_price">

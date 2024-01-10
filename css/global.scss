@@ -57,7 +57,9 @@ body {
   margin: auto;
   background: #F8F8F8;
   padding: 0;
-  min-height: 100vh;
+}
+main {
+  min-height: 80vh;
 } 
 a{
   text-decoration: none;
@@ -210,6 +212,8 @@ input[type="checkbox"] {
     overflow: hidden;
     padding: 0;
     margin:auto ;
+  // min-height: 100vh !important;
+
   }
   
 }
