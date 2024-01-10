@@ -205,6 +205,10 @@ input[type="checkbox"] {
   ::placeholder{
     font-size: 10px;
   }
+  label {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
 }
 @media(min-width:769px ) and (max-width:1200px) {
   .mycontainer{
