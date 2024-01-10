@@ -223,7 +223,7 @@ input[type=checkbox] {
     font-size: 12px !important;
     font-weight: 400 !important;
   }
-  .btn_home label, .location_branch label {
+  .btn_home label, .location_branch label, .offcanvas-title {
     font-size: 14px !important;
     font-weight: 400 !important;
   }
