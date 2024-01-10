@@ -482,6 +482,29 @@
                   ></textarea>
                 </div>
               </div>
+              <div class="send_message">
+                <label for="send_message">رسالة العزيمة عبر :</label>
+                <div class="d-flex align-items-center my-3">
+                  <div class="text d-flex align-items-center">
+                    <input
+                      type="radio"
+                      name="send_message"
+                      value="text"
+                      id="text"
+                    />
+                    <label for="text"> رسالة نصية</label>
+                  </div>
+                  <div class="WhatsApp d-flex align-items-center">
+                    <input
+                      type="radio"
+                      name="send_message"
+                      value="WhatsApp"
+                      id="WhatsApp"
+                    />
+                    <label for="WhatsApp"> WhatsApp</label>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- <button class="global_btn d-block m-auto">
               <i class="fa-solid fa-cart-shopping text-white"></i>
@@ -768,6 +791,7 @@
   @media (max-width: 768px) {
     .inf_3azema {
       h5,
+      .send_message,
       ::placeholder {
         font-weight: 400;
         font-size: 12px;
@@ -795,5 +819,8 @@
   }
   .fa-heart {
     margin-right: -10px;
+  }
+  .send_message {
+    font-size: 16px;
   }
 </style>
