@@ -18,8 +18,9 @@
     <!-- fontawsome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- style sheet -->
-    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <div class="mycontainer">
@@ -313,6 +314,97 @@
             </div>
           </div>
         </div>
+        <div class="inf_3azema my-5 mx-4 bg-white">
+          <div class="image d-inline-block">
+            <img src="./image//letter.jpg" alt="" />
+          </div>
+          <!-- <img src="./image//letter.jpg" alt="" /> -->
+          <h5 class="d-inline-block">معلومات العزيمة</h5>
+          <form>
+            <div class="inner_form bg-white m-auto p-4">
+              <div class="name">
+                <div class="container_input">
+                  <i class="fa fa-user"></i>
+                  <input type="text" id="name" placeholder=" اسم الشخص" />
+                </div>
+              </div>
+              <div class="phone_number">
+                <div class="container_input">
+                  <i class="fa fa-phone"></i>
+                  <input
+                    style="direction: rtl"
+                    type="tel"
+                    id="phone_number"
+                    placeholder=" رقم الموبايل "
+                  />
+                </div>
+              </div>
+              <div class="calneder">
+                <div class="container_input">
+                  <button
+                    class="btn btn_custom"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom"
+                  >
+                    <div>
+                      <i class="fa-solid fa-heart"></i>
+                      <span> المناسبة </span>
+                    </div>
+                    <i class="fa-solid fa-angle-left"></i>
+                  </button>
+
+                  <div
+                    class="offcanvas offcanvas-bottom"
+                    tabindex="-1"
+                    id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                        اختر مناسبة العزيمة
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                      <div>
+                        <input
+                          type="radio"
+                          id="city1"
+                          name="options"
+                          value="option1"
+                        />
+                        <label for="city1">الدمام</label>
+                      </div>
+                      <hr />
+                      <div>
+                        <input
+                          type="radio"
+                          id="city2"
+                          name="options"
+                          value="option2"
+                        />
+                        <label for="city2">الرياض</label>
+                      </div>
+                      <input type="submit" value="حفظ" />
+                    </div>
+                  </div>
+                  <!-- <select></select> -->
+                </div>
+              </div>
+            </div>
+            <button class="global_btn d-block m-auto">
+              <i class="fa-solid fa-cart-shopping text-white"></i>
+              اضافة للسلة
+            </button>
+          </form>
+        </div>
       </main>
       <div class="total bg-white p-4" id="total_followPayment">
         <div class="d-flex align-items-center justify-content-between w-100">
@@ -562,5 +654,48 @@
   /* } */
   .total_price p:nth-child(2) span {
     color: #f79b36;
+  }
+  .inf_3azema {
+    border-radius: 8px;
+    padding: 20px 15px;
+  }
+  .inf_3azema .image {
+    width: 13px;
+    height: 16px;
+  }
+  .inf_3azema .image img {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    .inf_3azema {
+      h5,
+      ::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+    .inf_3azema .image {
+      width: 11.5px;
+      height: 16px;
+    }
+  }
+  .inf_3azema .btn_custom {
+    background: transparent !important;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    color: #c7c7c7;
+  }
+  .inf_3azema .btn_custom:focus {
+    box-shadow: 0 0 0 0.25rem transparent;
+  }
+
+  ::placeholder {
+    color: #c7c7c7;
+  }
+  .fa-heart {
+    margin-right: -10px;
   }
 </style>
