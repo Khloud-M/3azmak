@@ -32,7 +32,7 @@
 
       <main>
         <div
-          class="join_us d-flex flex-column align-items-center px-5 m-5 justify-content-center"
+          class="join_us d-flex flex-column align-items-center px-5 justify-content-center"
         >
           <form id="myform">
             <h6 class="my-2">اختر طريقة الدفع</h6>
@@ -101,6 +101,14 @@
   </body>
 </html>
 <style>
+  .join_us {
+    margin: 30px 60px;
+  }
+  @media (max-width: 768px) {
+    .join_us {
+      margin: 30px 10px;
+    }
+  }
   .Credit_pay,
   .apple_pay {
     border-radius: 10px;
