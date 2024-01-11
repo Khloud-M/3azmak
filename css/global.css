@@ -83,6 +83,10 @@ a:hover {
   color: #303030;
 }
 
+label {
+  font-size: 14px !important;
+}
+
 .header {
   -moz-column-gap: 300px;
        column-gap: 300px;
