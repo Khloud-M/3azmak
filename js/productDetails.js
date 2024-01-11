@@ -35,6 +35,7 @@ decreaseBtn1.addEventListener("click", function (event) {
     countElement1.textContent = countOne; // Update the count element with the new value
   }
 });
+
 decreaseBtn2.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   if (counttwo > 1) {
@@ -54,8 +55,15 @@ decreaseBtn3.addEventListener("click", function (event) {
 increaseBtn.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   count++; // Increase the count value by 1
-  countElement.textContent = count; // Update the count element with the new value
+  countElement.textContent = count;
+  updateTotalPrice(count);
 });
+function updateTotalPrice(count) {
+  var PriceElement = document.getElementById("totalPrice");
+  var totalPrice = parseInt(PriceElement.textContent);
+  price = totalPrice * count;
+  PriceElement.textContent = price;
+}
 increaseBtn1.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   countOne++; // Increase the count value by 1
