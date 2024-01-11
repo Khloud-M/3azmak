@@ -60,9 +60,10 @@ increaseBtn.addEventListener("click", function (event) {
 });
 function updateTotalPrice(count) {
   var PriceElement = document.getElementById("totalPrice");
+  var PriceElement2 = document.getElementById("totalPrice2");
   var totalPrice = parseInt(PriceElement.textContent);
   price = totalPrice * count;
-  PriceElement.textContent = price;
+  PriceElement2.textContent = price;
 }
 increaseBtn1.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission

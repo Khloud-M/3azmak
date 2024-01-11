@@ -27,12 +27,12 @@
 .list_Gallery{
     .image{
         width: 100%;
-        overflow: hidden;
+        height: 300px;
         img{
             width: 100%;
+            height: 100%;
             object-fit: cover;
-            overflow: hidden;
-            border-radius: 10px;
+            border-radius: 8px;
         }
     }
 }
@@ -155,9 +155,9 @@
 }
 // slider
 .main_dish .splide__slide{
-    &:nth-child(1) {
-        margin-right: 50px;
-    }
+    // &:nth-child(1) {
+    //     margin-right: 50px;
+    // }
     margin: 0 5px;
     width: 100px !important;
     .image {
@@ -171,6 +171,9 @@
           }
     }
 
+}
+.splide__list{
+    justify-content: center;
 }
 .main_dish .splide__slide.is-active.is-visible{
     img{
@@ -191,4 +194,7 @@
         padding: 0 10px;
       }
   }
-
+  .description {
+    font-size: 12px !important;
+    font-weight: 400;
+  }
