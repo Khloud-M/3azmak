@@ -6,6 +6,8 @@
   --bg-color:#E6EAEE;
   --transtion:0.3s;
   --bg-btn:#CACACA;
+  --bg-second:#F4F4F4;
+  --bg-main:#FFFFFF;
 }
 
 * {
@@ -22,6 +24,7 @@ hr {
 body {
   font-family: "Readex Pro", sans-serif;
   direction: rtl;
+  background: var(--bg-second);
 }
 
 .restrotion {
@@ -68,12 +71,12 @@ body {
   width: 38% !important;
   direction: rtl !important;
   margin: auto;
-  background: #F8F8F8;
+  background: var(--bg-second);
   padding: 0;
 }
 
 main {
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 a {
