@@ -17,6 +17,11 @@
   font-family: "Readex Pro", sans-serif;
 }
 
+header h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 hr {
   color: var(--second_color);
 }
