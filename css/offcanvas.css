@@ -20,4 +20,21 @@
 
 .offcanvas-body {
   direction: rtl;
+}
+
+.btn_custom {
+  background: #EAEAEA;
+  font-size: 12px !important;
+  border-radius: 4px;
+}
+.btn_custom:focus, .btn_custom:hover {
+  background: #EAEAEA;
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+}
+
+.btn-close:focus, .btn:focus {
+  box-shadow: none;
+  opacity: 0.5;
 }/*# sourceMappingURL=offcanvas.css.map */

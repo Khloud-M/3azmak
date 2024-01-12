@@ -44,21 +44,6 @@ body {
   background-color: var(--bg-btn);
 }
 
-.btn_custom {
-  background: #EAEAEA;
-}
-.btn_custom:focus, .btn_custom:hover {
-  background: #EAEAEA;
-  outline: none;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.btn-close:focus, .btn:focus {
-  box-shadow: 0 0 0 0.25rem #F79B36;
-  opacity: 0.5;
-}
-
 ::-moz-placeholder {
   font-size: 13px;
 }
