@@ -43,9 +43,9 @@ header{
         }
     }
 }
-@media (max-width:768px) {
-    .offcanvas_mobile{
-        width: 250px !important;
+@media(max-width:768px) {
+    .offcanvas.offcanvas_mobile{
+        width:200px !important;
     }
     .name{
         font-size: 14px;
