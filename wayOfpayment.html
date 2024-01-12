@@ -47,7 +47,10 @@
               <input type="radio" id="Credit_pay" name="pay" />
               <label for="Credit_pay"> Credit Card</label>
             </div>
-            <a href="thankU.html"> l</a>
+            <a href="thankU.html" class="global_btn">
+              الدفع
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
           </form>
         </div>
       </main>
@@ -95,5 +98,16 @@
   .Credit_pay,
   .apple_pay {
     border-radius: 8px;
+  }
+  .global_btn {
+    width: 150px;
+    margin: 100px auto;
+    font-size: 14px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .global_btn i {
+    color: white;
   }
 </style>
