@@ -113,7 +113,7 @@ footer{
     padding: 10px 20px;
     border-radius: 10px;
     transition: all var(--transtion) ease-in-out;
-    &:hover , &:active{
+    &:hover , &:active &:focus{
        background-color: white;
           i {
             color: #F79B36;

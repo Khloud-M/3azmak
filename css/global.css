@@ -120,13 +120,13 @@ footer div {
   border-radius: 10px;
   transition: all var(--transtion) ease-in-out;
 }
-footer div:hover, footer div:active {
+footer div:hover, footer div:active footer div:focus {
   background-color: white;
 }
-footer div:hover i, footer div:active i {
+footer div:hover i, footer div:active footer div:focus i {
   color: #F79B36;
 }
-footer div:hover a, footer div:active a {
+footer div:hover a, footer div:active footer div:focus a {
   color: black !important;
 }
 footer div i {
