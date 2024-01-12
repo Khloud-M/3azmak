@@ -36,7 +36,7 @@
 .list_Gallery {
     border-radius: 15px;
     .content_list{
-        h3{
+        h3 a{
             font-size: 18px;
         }
         .more_details{
@@ -105,10 +105,10 @@
         }
     }
     .content_list{
-        h3{
+        h3 a{
             font-size: 12px !important;
         }
-        p{
+        p a{
             font-size: 10px;
         }
         .more_details{
@@ -144,8 +144,9 @@
     color:black;
 }
 .content_list{
-    p{
+    p a{
         color: #909090;
+        font-size: 14px;
     }
 }
 // slider

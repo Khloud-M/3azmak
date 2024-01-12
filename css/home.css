@@ -39,9 +39,9 @@
 .list_Gallery {
   border-radius: 15px;
 }
-.list .content_list h3,
-.list_Galler .content_list h3,
-.list_Gallery .content_list h3 {
+.list .content_list h3 a,
+.list_Galler .content_list h3 a,
+.list_Gallery .content_list h3 a {
   font-size: 18px;
 }
 .list .content_list .more_details .action button,
@@ -111,10 +111,10 @@
   .list .image {
     width: 50%;
   }
-  .content_list h3 {
+  .content_list h3 a {
     font-size: 12px !important;
   }
-  .content_list p {
+  .content_list p a {
     font-size: 10px;
   }
   .content_list .more_details .action i {
@@ -142,8 +142,9 @@
   color: black;
 }
 
-.content_list p {
+.content_list p a {
   color: #909090;
+  font-size: 14px;
 }
 
 .main_dish .splide__slide {
