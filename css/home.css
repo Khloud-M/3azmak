@@ -157,9 +157,6 @@
 }
 
 @media (max-width: 768px) {
-  .offcanvas_mobile {
-    width: 250px !important;
-  }
   .list .image {
     width: 50%;
   }
