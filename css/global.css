@@ -126,6 +126,9 @@ footer div:hover, footer div:active {
 footer div:hover i, footer div:active i {
   color: #F79B36;
 }
+footer div:hover a, footer div:active a {
+  color: black !important;
+}
 footer div i {
   font-size: 15px;
 }
