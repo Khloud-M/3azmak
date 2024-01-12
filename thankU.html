@@ -28,10 +28,18 @@
           class="end_thank bg-white p-5 d-flex flex-column align-items-center"
           id="end_thank"
         >
-          <img src="./image/thankyou.jpg" class="d-block m-auto" alt="thank" />
+          <div class="image_thanks">
+            <img
+              src="./image/thankyou.jpg"
+              class="d-block m-auto"
+              alt="thank"
+            />
+          </div>
           <h6>رقم الطلب : 6548-A</h6>
           <h6>09 September 2023 7:00 PM</h6>
-          <img src="./image/Qr.jpg" class="d-block m-auto" alt="code" />
+          <div class="image_thanks">
+            <img src="./image/Qr.jpg" class="d-block m-auto" alt="code" />
+          </div>
           <button><a href="home.html" class="text-white"> إغلاق</a></button>
         </div>
       </main>
@@ -42,9 +50,12 @@
   main {
     min-height: 100vh !important;
   }
-  .Credit_pay,
-  .apple_pay {
-    border-radius: 10px;
+  .image_thanks {
+    width: 300px;
+    margin: auto;
+  }
+  img {
+    width: 100%;
   }
   .end_thank button {
     background: var(--black_color);
