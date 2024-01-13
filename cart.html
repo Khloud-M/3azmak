@@ -394,39 +394,52 @@
                     </form>
                   </div>
                 </div>
-
-                <div class="cart-item">
-                  <div class="image">
-                    <img src="./image/cover1.jpg" alt="" />
-                  </div>
-                  <div class="details">
-                    <h6>اسم الوجبة</h6>
-                    <img
-                      src="./image//logo.png"
-                      alt="logo"
-                      width="22"
-                      height="22"
-                    />
-                    <small>برغر كينغ</small>
-                    <p class="my-1">
-                      وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
-                      الوجبة هنا وصف قصير عن الوجبة هنا
-                    </p>
-                    <div
-                      class="action d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <del>60</del>
-                        <span>45.5</span>
-                        <small> ر.س</small>
-                      </div>
+                <div class="bg-white main_wrap mb-3">
+                  <div class="cart-item">
+                    <div class="image">
+                      <img src="./image/cover1.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h6>اسم الوجبة</h6>
+                      <img
+                        src="./image//logo.png"
+                        alt="logo"
+                        width="22"
+                        height="22"
+                      />
+                      <small>برغر كينغ</small>
+                      <p class="my-1">
+                        وصف قصير عن الوجبة هنا وصف قصير عن الوجبة هناوصف قصير عن
+                        الوجبة هنا وصف قصير عن الوجبة هنا
+                      </p>
                       <div
-                        class="action_operation d-flex align-items-center justify-content-between"
+                        class="action d-flex align-items-center justify-content-between"
                       >
-                        <button class="border-0">+</button>
-                        <span class="text-dark"> 2 </span>
-                        <button class="border-0">-</button>
+                        <div>
+                          <del>60</del>
+                          <span>45.5</span>
+                          <small> ر.س</small>
+                        </div>
+                        <div
+                          class="action_operation d-flex align-items-center justify-content-between"
+                        >
+                          <button class="border-0">+</button>
+                          <span class="text-dark"> 2 </span>
+                          <button class="border-0">-</button>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="addto_3azema px-4">
+                    <div class="image d-inline-block">
+                      <img src="./image//letter.jpg" alt="" />
+                    </div>
+                    <h5 class="d-inline-block">معلومات العزيمة</h5>
+                    <div class="d-flex align-items-center">
+                      <input type="checkbox" />
+                      <label class="text_checkbox mx-2">
+                        تتضمن مع العزيمة السابقة (فهد الغامدي)
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -698,8 +711,6 @@
     padding-bottom: 20px;
   }
   .cart-item {
-    background-color: white;
-    border-radius: 8px;
     display: flex;
     flex-direction: row;
     column-gap: 30px;
@@ -785,21 +796,27 @@
   .total_price p:nth-child(2) span {
     color: #f79b36;
   }
+  .text_checkbox {
+    font-size: 12px;
+  }
   .inf_3azema {
     border-radius: 8px;
     border: 1px solid #f8f8f8;
     margin: 0 10px;
     padding: 15px 10px;
   }
-  .inf_3azema .image {
+  .inf_3azema .image,
+  .addto_3azema .image {
     width: 13px;
     height: 16px;
   }
-  .inf_3azema .image img {
+  .inf_3azema .image img,
+  .addto_3azema .image img {
     width: 100%;
     height: 100%;
   }
-  .inf_3azema {
+  .inf_3azema,
+  .addto_3azema {
     h5,
     .send_message {
       font-weight: 400;
