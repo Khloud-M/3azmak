@@ -123,17 +123,17 @@ footer button, footer div {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 8px;
   transition: all var(--transtion) ease-in-out;
 }
-footer button:hover, footer button:active footer button:focus, footer div:hover, footer button:active footer div:focus, footer div:active footer button:focus, footer div:active footer div:focus {
+footer button:hover, footer div:hover {
   background-color: white;
 }
-footer button:hover i, footer button:active footer button:focus i, footer div:hover i, footer button:active footer div:focus i, footer div:active footer button:focus i, footer div:active footer div:focus i {
-  color: #F79B36;
+footer button:hover i, footer div:hover i {
+  color: #F79B36 !important;
 }
-footer button:hover a, footer button:active footer button:focus a, footer div:hover a, footer button:active footer div:focus a, footer div:active footer button:focus a, footer div:active footer div:focus a {
+footer button:hover a, footer div:hover a {
   color: black !important;
 }
 footer button i, footer div i {
