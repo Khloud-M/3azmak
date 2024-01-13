@@ -50,11 +50,11 @@ body {
 }
 
 ::-moz-placeholder {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 ::placeholder {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .mycontainer {
