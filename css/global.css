@@ -117,7 +117,7 @@ label {
 footer {
   overflow: hidden;
   box-shadow: 1px 1px 1px 1px rgba(219, 215, 215, 0.1411764706);
-  background: linear-gradient(180deg, #FFFFFF 0%, #e9e9e9 100%);
+  background: linear-gradient(180deg, #FFFFFF 10%, #e9e9e9 90%);
 }
 footer button, footer div {
   background: none;
