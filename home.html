@@ -274,6 +274,18 @@
                 </div>
                 <h6 class="text-center my-2">المخبوزات</h6>
               </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/bake.jpg" />
+                </div>
+                <h6 class="text-center my-2">المخبوزات</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/bake.jpg" />
+                </div>
+                <h6 class="text-center my-2">المخبوزات</h6>
+              </li>
             </ul>
           </div>
         </section>
@@ -564,7 +576,18 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script>
-      new Splide(".splide").mount();
+      // new Splide(".splide").mount();
+      new Splide(".splide", {
+        rewind: true,
+        rewind: true,
+        loop: true,
+        pauseOnFocus: true,
+        breakpoints: {
+          640: {
+            perPage: 1,
+          },
+        },
+      }).mount();
 
       // document.addEventListener("DOMContentLoaded", function () {
       //   new Splide("#card-carousel", {
