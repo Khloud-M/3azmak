@@ -119,7 +119,7 @@ footer {
   box-shadow: 1px 1px 1px 1px rgba(219, 215, 215, 0.1411764706);
   background: linear-gradient(180deg, #FFFFFF 10%, #e9e9e9 90%);
 }
-footer button, footer div {
+footer div {
   background: none;
   border: none;
   cursor: pointer;
@@ -127,19 +127,19 @@ footer button, footer div {
   border-radius: 8px;
   transition: all var(--transtion) ease-in-out;
 }
-footer button:hover, footer div:hover {
+footer div:hover {
   background-color: white;
 }
-footer button:hover i, footer div:hover i {
+footer div:hover i {
   color: #F79B36 !important;
 }
-footer button:hover a, footer div:hover a {
+footer div:hover a {
   color: black !important;
 }
-footer button i, footer div i {
+footer div i {
   font-size: 15px;
 }
-footer button a:nth-child(2), footer div a:nth-child(2) {
+footer div a:nth-child(2) {
   color: var(--second_color);
   font-size: 12px;
   line-height: 15px;
