@@ -11,6 +11,7 @@ var countElement = document.getElementById("count");
 var countElement1 = document.getElementById("count1");
 var countElement2 = document.getElementById("count2");
 var countElement3 = document.getElementById("count3");
+var addCheckbox = document.getElementById("add33");
 
 var form = document.getElementById("myForm");
 
@@ -25,14 +26,22 @@ decreaseBtn.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   if (count > 1) {
     count--; // Decrease the count value by 1
-    countElement.textContent = count; // Update the count element with the new value
+    countElement.textContent = count;
+    var PriceElement = document.getElementById("totalPrice");
+    var PriceElement2 = document.getElementById("totalPrice2");
+    var totalPrice = parseInt(PriceElement.textContent);
+    PriceElement2.textContent -= totalPrice;
   }
 });
 decreaseBtn1.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   if (countOne > 1) {
     countOne--; // Decrease the count value by 1
-    countElement1.textContent = countOne; // Update the count element with the new value
+    countElement1.textContent = countOne;
+    var choose_add = document.getElementById("choose_add");
+    var choose_addValue = document.getElementById("choose_addValue");
+    var totalPrice = parseInt(choose_add.textContent);
+    choose_addValue.textContent -= totalPrice;
   }
 });
 
@@ -56,15 +65,20 @@ increaseBtn.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   count++; // Increase the count value by 1
   countElement.textContent = count;
-  updateTotalPrice(count);
-});
-function updateTotalPrice(count) {
   var PriceElement = document.getElementById("totalPrice");
   var PriceElement2 = document.getElementById("totalPrice2");
   var totalPrice = parseInt(PriceElement.textContent);
   price = totalPrice * count;
   PriceElement2.textContent = price;
-}
+});
+// addCheckbox.addEventListener("change", function () {
+//   if (addCheckbox.checked) {
+//     var price = parseInt(choose_addValue.textContent);
+//     updateTotalPrice(price); // Call the updateTotalPrice function with the current price
+//   } else {
+//     updateTotalPrice(0); // If unchecked, set the price to 0
+//   }
+// });
 increaseBtn1.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
   countOne++; // Increase the count value by 1
@@ -74,6 +88,9 @@ increaseBtn1.addEventListener("click", function (event) {
   var totalPrice = parseInt(choose_add.textContent);
   price = totalPrice * countOne;
   choose_addValue.textContent = price;
+  // if (addCheckbox.checked) {
+  //   updateTotalPrice(price); // Call the updateTotalPrice function with the new price
+  // }
 });
 increaseBtn2.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent form submission
