@@ -69,12 +69,21 @@
   padding: 0 10px;
 }
 
-.list_Galler .image,
-.list_Gallery .image {
+.list_Galler .image {
   width: 100%;
   height: 300px;
 }
-.list_Galler .image img,
+.list_Galler .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.list_Gallery .image {
+  width: 100%;
+}
 .list_Gallery .image img {
   width: 100%;
   height: 100%;
