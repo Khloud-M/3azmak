@@ -92,6 +92,7 @@
 .list_Galler .content_list h3 a,
 .list_Gallery .content_list h3 a {
   font-size: 18px;
+  background-color: red;
 }
 .list .content_list .more_details .action button,
 .list_Galler .content_list .more_details .action button,
@@ -194,4 +195,8 @@
 .content_list p a {
   color: #909090;
   font-size: 14px;
+}
+
+.list {
+  color: red !important;
 }/*# sourceMappingURL=home.css.map */
