@@ -250,7 +250,7 @@
           بديل لا علاقة له بالموضوع
         </p>
 
-        <section
+        <!-- <section
           class="splide my-1 main_dish"
           aria-label="Basic Structure Example"
         >
@@ -288,7 +288,55 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
+        <div class="splide my-1 main_dish">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/cover1.jpg" />
+                </div>
+                <h6 class="text-center my-2">المطاعم</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/drink.jpg" />
+                </div>
+                <h6 class="text-center my-2">المقاهي</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/bake.jpg" />
+                </div>
+                <h6 class="text-center my-2">المخبوزات</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/cover1.jpg" />
+                </div>
+                <h6 class="text-center my-2">تيست</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/desert.jpg" />
+                </div>
+                <h6 class="text-center my-2">تيست تو</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/cover1.jpg" />
+                </div>
+                <h6 class="text-center my-2">ثري تيست</h6>
+              </li>
+              <li class="splide__slide">
+                <div class="image">
+                  <img src="./image/cover1.jpg" />
+                </div>
+                <h6 class="text-center my-2">فور تيست</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- end slider show main dishes -->
@@ -349,75 +397,7 @@
             aria-labelledby="home-tab"
           >
             <div class="row mt-3">
-              <div class="col-6">
-                <div class="list_Galler p-2" id="product1">
-                  <div class="image">
-                    <a href="productDetails.html">
-                      <img src="./image/meal3.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="content_list p-2">
-                    <h3><a href="productDetails.html"> اسم الوجبة</a></h3>
-                    <p><a href="productDetails.html"> وصف الوجبة </a></p>
-                    <div
-                      class="more_details d-flex align-items-center justify-content-between"
-                    >
-                      <div class="action">
-                        <button
-                          id="addToCartBtn"
-                          class="cart-btn"
-                          data-product-id="product1"
-                        >
-                          <a href="productDetails.html">
-                            <i class="fa-solid fa-cart-plus"></i>
-                          </a>
-                        </button>
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div>
-                      <div class="price">
-                        <span>50</span>
-                        <small> ر.س</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list_Galler th_large p-2" id="product2">
-                  <div class="image">
-                    <a href="productDetails.html">
-                      <img id="productImage" src="./image/meal.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="content_list p-2">
-                    <h3><a href="productDetails.html"> اسم الوجبة</a></h3>
-                    <p><a href="productDetails.html"> وصف الوجبة </a></p>
-                    <div
-                      class="more_details d-flex align-items-center justify-content-between"
-                    >
-                      <div class="action">
-                        <button
-                          id="addToCartBtn"
-                          class="cart-btn"
-                          data-product-id="product2"
-                        >
-                          <a href="productDetails.html">
-                            <i class="fa-solid fa-cart-plus"></i>
-                          </a>
-                        </button>
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div>
-                      <div class="price">
-                        <span>60</span>
-                        <small> ر.س</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-6">
+              <div class="col-6 mt-3">
                 <div class="list_Galler th_large p-2" id="product1">
                   <div class="image">
                     <a href="productDetails.html">
@@ -450,7 +430,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-6 mt-3">
                 <div class="list_Galler th_large p-2" id="product2">
                   <div class="image">
                     <a href="productDetails.html">
@@ -576,51 +556,41 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script>
-      // new Splide(".splide").mount();
-      new Splide(".splide", {
-        rewind: true,
-        rewind: true,
-        loop: true,
-        pauseOnFocus: true,
-        breakpoints: {
-          640: {
-            perPage: 1,
-          },
-        },
-      }).mount();
-
+      // splide.mount();
       // document.addEventListener("DOMContentLoaded", function () {
-      //   new Splide("#card-carousel", {
-      //     perPage: 2,
-      //     breakpoints: {
-      //       640: {
-      //         perPage: 1,
-      //       },
-      //     },
-      //   }).mount();
-      // });
-      // var elms = document.getElementsByClassName("splide");
+      //   var splide = new Splide(".splide", {
+      //     type: "loop",
+      //     autoWidth: true,
+      //     focus: "center",
+      //     omitEnd: true,
+      //   });
 
-      // for (var i = 0; i < elms.length; i++) {
-      //   new Splide(elms[0], {
-      //     perPage: 4,
-      //     rewind: true,
-      //     breakpoints: {
-      //       640: {
-      //         perPage: 2,
-      //       },
-      //     },
-      //   }).mount();
-      //   new Splide(elms[1], {
-      //     perPage: 4,
-      //     rewind: true,
-      //     breakpoints: {
-      //       640: {
-      //         perPage: 2,
-      //       },
-      //     },
-      //   }).mount();
-      // }
+      //   splide.on("click", function (slide) {
+      //     // Remove the class from all slides
+      //     splide.Components.Elements.slides.forEach(function (slideElement) {
+      //       slideElement.classList.remove("is-active", "is-visible");
+      //     });
+
+      //     // Add the class to the clicked slide
+      //     slide.slide.classList.add("is-active", "is-visible");
+      //   });
+
+      //   splide.mount();
+      // });
+
+      const mainDishSplide = new Splide(".main_dish", {
+        perPage: 3,
+        // perMove: 1,
+        focus: "start",
+      }).mount();
+      mainDishSplide.on("click", function (slide) {
+        mainDishSplide.Components.Elements.slides.forEach(function (
+          slideElement
+        ) {
+          slideElement.classList.remove("is-active");
+        });
+        slide.slide.classList.add("is-active");
+      });
     </script>
     <script src="js/cart.js"></script>
   </body>
