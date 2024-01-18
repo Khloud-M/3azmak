@@ -556,32 +556,11 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script>
-      // splide.mount();
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   var splide = new Splide(".splide", {
-      //     type: "loop",
-      //     autoWidth: true,
-      //     focus: "center",
-      //     omitEnd: true,
-      //   });
-
-      //   splide.on("click", function (slide) {
-      //     // Remove the class from all slides
-      //     splide.Components.Elements.slides.forEach(function (slideElement) {
-      //       slideElement.classList.remove("is-active", "is-visible");
-      //     });
-
-      //     // Add the class to the clicked slide
-      //     slide.slide.classList.add("is-active", "is-visible");
-      //   });
-
-      //   splide.mount();
-      // });
-
       const mainDishSplide = new Splide(".main_dish", {
-        perPage: 3,
+        // perPage: 3,
         // perMove: 1,
-        focus: "start",
+        focus: 0,
+        type: "loop",
       }).mount();
       mainDishSplide.on("click", function (slide) {
         mainDishSplide.Components.Elements.slides.forEach(function (
