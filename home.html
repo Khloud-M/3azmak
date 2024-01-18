@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>عازمك</title>
     <!-- //font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
-    <!-- //bootstrap -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- fontawsome -->
@@ -22,6 +31,7 @@
     <link rel="stylesheet" href="splide/dist/css/splide.min.css" />
     <link rel="stylesheet" href="css/home.css" />
     <script src="splide/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script>
   </head>
   <body>
     <div class="mycontainer">
@@ -249,93 +259,81 @@
           الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص
           بديل لا علاقة له بالموضوع
         </p>
+        <div class="card__container swiper">
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="/image/desert.jpg" alt="image" class="card__img" />
+                </div>
 
-        <!-- <section
-          class="splide my-1 main_dish"
-          aria-label="Basic Structure Example"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/cover1.jpg" />
+                <div class="card__data">
+                  <h3 class="card__name">الحلويات</h3>
                 </div>
-                <h6 class="text-center my-2">المطاعم</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/drink.jpg" />
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="/image/drink.jpg" alt="image" class="card__img" />
                 </div>
-                <h6 class="text-center my-2">المقاهي</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/bake.jpg" />
+
+                <div class="card__data">
+                  <h3 class="card__name">المشروبات</h3>
                 </div>
-                <h6 class="text-center my-2">المخبوزات</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/bake.jpg" />
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="/image/cover1.jpg" alt="image" class="card__img" />
                 </div>
-                <h6 class="text-center my-2">المخبوزات</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/bake.jpg" />
+
+                <div class="card__data">
+                  <h3 class="card__name">الرئيسية</h3>
                 </div>
-                <h6 class="text-center my-2">المخبوزات</h6>
-              </li>
-            </ul>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="/image/bake.jpg" alt="image" class="card__img" />
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">المخبوزات</h3>
+                </div>
+              </article>
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="/image/bake.jpg" alt="image" class="card__img" />
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">المخبوزات</h3>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="/image/bake.jpg" alt="image" class="card__img" />
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">المخبوزات</h3>
+                </div>
+              </article>
+            </div>
           </div>
-        </section> -->
-        <div class="splide my-1 main_dish">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/cover1.jpg" />
-                </div>
-                <h6 class="text-center my-2">المطاعم</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/drink.jpg" />
-                </div>
-                <h6 class="text-center my-2">المقاهي</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/bake.jpg" />
-                </div>
-                <h6 class="text-center my-2">المخبوزات</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/cover1.jpg" />
-                </div>
-                <h6 class="text-center my-2">تيست</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/desert.jpg" />
-                </div>
-                <h6 class="text-center my-2">تيست تو</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/cover1.jpg" />
-                </div>
-                <h6 class="text-center my-2">ثري تيست</h6>
-              </li>
-              <li class="splide__slide">
-                <div class="image">
-                  <img src="./image/cover1.jpg" />
-                </div>
-                <h6 class="text-center my-2">فور تيست</h6>
-              </li>
-            </ul>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
           </div>
+
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
 
@@ -554,23 +552,32 @@
       </footer>
     </div>
 
-    <script src="js/bootstrap.bundle.js"></script>
     <script>
-      const mainDishSplide = new Splide(".main_dish", {
-        // perPage: 3,
-        // perMove: 1,
-        focus: 0,
-        type: "loop",
-      }).mount();
-      mainDishSplide.on("click", function (slide) {
-        mainDishSplide.Components.Elements.slides.forEach(function (
-          slideElement
-        ) {
-          slideElement.classList.remove("is-active");
+      document.addEventListener("DOMContentLoaded", function () {
+        const cardArticles = document.querySelectorAll(".card__image");
+
+        cardArticles.forEach(function (card) {
+          card.addEventListener("click", function () {
+            // Remove "active" class from all cards
+            cardArticles.forEach(function (card) {
+              card.classList.remove("active_categery");
+            });
+
+            // Add "active" class to the clicked card
+            this.classList.add("active_categery");
+          });
         });
-        slide.slide.classList.add("is-active");
       });
     </script>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/cart.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
+<style>
+  .active_categery {
+    border: 3px solid var(--main_color);
+    border-radius: 8px;
+  }
+</style>
