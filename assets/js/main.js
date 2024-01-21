@@ -80,21 +80,21 @@ document.addEventListener("DOMContentLoaded", function () {
     //     pagination.style.display = "none";
     //   }
     // }
-    const navigationButtons = document.querySelectorAll(
-      ".swiper-button-next, .swiper-button-prev"
-    );
-    const pagination = document.querySelector(".swiper-pagination");
+    // const navigationButtons = document.querySelectorAll(
+    //   ".swiper-button-next, .swiper-button-prev"
+    // );
+    // const pagination = document.querySelector(".swiper-pagination");
 
-    navigationButtons.forEach((button) => {
-      button.style.display = "none";
-    });
+    // navigationButtons.forEach((button) => {
+    //   button.style.display = "none";
+    // });
 
-    if (pagination) {
-      pagination.style.display = "none";
-    }
+    // if (pagination) {
+    //   pagination.style.display = "none";
+    // }
 
     cardArticles.forEach((article) => {
-      article.style.margin = "0 10px";
+      article.style.margin = "auto";
     });
   }
 });
